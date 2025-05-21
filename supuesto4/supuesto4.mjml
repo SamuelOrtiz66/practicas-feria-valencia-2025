@@ -1,16 +1,14 @@
 <mjml>
-
   <mj-head>
     <mj-title>Sorteo GP Cheste - Feria Dos Ruedas | Feria Valencia</mj-title>
     <mj-preview>Participa antes del 1 de septiembre y gana 2 entradas para el GP de Motociclismo</mj-preview>
   </mj-head>
 
-
   <mj-body background-color="#f9f9f9" font-family="Arial, sans-serif">
 
     <mj-section background-color="#ffffff" padding="20px 0">
       <mj-column>
-        <mj-image src="https://fimma-maderalia.feriavalencia.com/wp-content/uploads/2019/02/LOGO-FERIA-VALENCIA-OK.jpg" alt="Feria Valencia" width="200px" align="center" />
+        <mj-image src="https://fimma-maderalia.feriavalencia.com/wp-content/uploads/2019/02/LOGO-FERIA-VALENCIA-OK.jpg" alt="Logo Feria Valencia" width="200px" align="center" />
       </mj-column>
     </mj-section>
 
@@ -19,14 +17,13 @@
         <mj-text align="center" color="#ffffff" font-size="24px" font-weight="bold">
           🎉 Sorteo GP de Motociclismo
         </mj-text>
-        <mj-text align="center" color="#ffeaea" font-size="16px">
+        <mj-text align="center" color="#ffeaea" font-size="16px" padding-bottom="10px">
           Participa antes del 1 de septiembre y gana 2 entradas para Cheste
         </mj-text>
       </mj-column>
-
     </mj-section>
 
-    <mj-section background-color="#ffffff" padding="30px 20px">
+    <mj-section background-color="#ffffff" padding="30px 20px 15px 20px">
       <mj-column>
         <mj-text font-size="18px" font-weight="bold" color="#d32f2f">
           Organiza: Feria Dos Ruedas – Feria Valencia
@@ -38,13 +35,14 @@
         <mj-text font-size="16px" color="#333333" line-height="1.5">
           Solo tienes que rellenar el formulario y estarás participando automáticamente.
         </mj-text>
-        <mj-button background-color="#d32f2f" color="#ffffff" font-size="16px" padding="15px 30px" href="https://feriadosruedas.com/inscripcion">
-          Participa ahora
+        <mj-button background-color="#d32f2f" color="#ffffff" font-size="18px" padding="15px 30px" href="https://feriadosruedas.com/inscripcion" font-weight="bold">
+          ¡Participa ahora y no te lo pierdas!
         </mj-button>
+        <mj-image src="https://cdn.pixabay.com/animation/2022/10/26/02/47/02-47-00-744_512.gif" alt="Flecha animada" width="50px" align="center" padding="10px 0 0 0" />
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#ffffff" padding="20px 20px">
+    <mj-section background-color="#ffffff" padding="10px 20px 20px 20px">
       <mj-column>
         <mj-text font-size="18px" font-weight="bold" color="#d32f2f">
           ¿Por qué asistir?
@@ -56,12 +54,11 @@
           • Exhibiciones y actividades durante toda la feria
         </mj-text>
       </mj-column>
-
     </mj-section>
 
-    <mj-section background-color="#ffffff" padding="0 20px 30px">
+    <mj-section background-color="#ffffff" padding="0 20px 30px 20px">
       <mj-column>
-        <mj-image src="https://i0.wp.com/efe.com/wp-content/uploads/2025/05/johann-zarco-motogp-francia-le-mans.webp?fit=900%2C600&ssl=1" alt="GP Cheste" width="400pxq1" />
+        <mj-image src="https://i0.wp.com/efe.com/wp-content/uploads/2025/05/johann-zarco-motogp-francia-le-mans.webp?fit=900%2C600&ssl=1" alt="GP Cheste" width="400px" />
       </mj-column>
     </mj-section>
     
