@@ -2,52 +2,63 @@
   <mj-head>
     <mj-title>Sorteo GP Cheste - Feria Dos Ruedas | Feria Valencia</mj-title>
     <mj-preview>Participa antes del 1 de septiembre y gana 2 entradas para el GP de Motociclismo</mj-preview>
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
+    <mj-style inline="inline">
+      .gif-background {
+        background-image: url('https://i.gifer.com/8MQx.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .soft-red-gradient {
+        background: linear-gradient(90deg, #fbe9e7, #ffcccb);
+      }
+    </mj-style>
   </mj-head>
 
-  <mj-body background-color="#f9f9f9" font-family="Arial, sans-serif">
+  <mj-body background-color="#fff5f5" font-family="Poppins, Arial, sans-serif">
 
-    <mj-section background-color="#ffffff" padding="20px 0">
+    <mj-section padding="0" css-class="gif-background">
       <mj-column>
-        <mj-image src="https://fimma-maderalia.feriavalencia.com/wp-content/uploads/2019/02/LOGO-FERIA-VALENCIA-OK.jpg" alt="Logo Feria Valencia" width="200px" align="center" />
+        <mj-image src="https://dosruedas.feriavalencia.com/wp-content/uploads/2022/03/cropped-Logo_2RUEDAS_2022_150ppp-1.png" alt="Logo Feria Valencia" width="200px" align="center" padding="20px 0" />
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#d32f2f" padding="30px 20px">
+    <mj-section background-color="#b71c1c" padding="0 20px 50px 20px">
       <mj-column>
-        <mj-text align="center" color="#ffffff" font-size="24px" font-weight="bold">
+        <mj-text align="center" color="#ffffff" font-size="24px" font-weight="bold" padding-bottom="5px">
           🎉 Sorteo GP de Motociclismo
         </mj-text>
-        <mj-text align="center" color="#ffeaea" font-size="16px" padding-bottom="10px">
+        <mj-text align="center" color="#ffdddd" font-size="16px">
           Participa antes del 1 de septiembre y gana 2 entradas para Cheste
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#ffffff" padding="30px 20px 15px 20px">
+    <mj-section background-color="#ffffff" padding="20px 20px 0 20px">
       <mj-column>
-        <mj-text font-size="18px" font-weight="bold" color="#d32f2f">
+        <mj-text font-size="18px" font-weight="600" color="#b71c1c" padding-bottom="10px">
           Organiza: Feria Dos Ruedas – Feria Valencia
         </mj-text>
-
-        <mj-text font-size="16px" color="#333333" line-height="1.5">
+        <mj-text font-size="15px" color="#444444" line-height="1.6">
           La Feria Dos Ruedas, organizada por <strong>Feria Valencia</strong>, sortea <strong>2 entradas para el GP de Motociclismo de Cheste</strong> entre todos los visitantes que completen su inscripción antes del <strong>1 de septiembre</strong>.
         </mj-text>
-        <mj-text font-size="16px" color="#333333" line-height="1.5">
+        <mj-text font-size="15px" color="#444444" padding-bottom="15px">
           Solo tienes que rellenar el formulario y estarás participando automáticamente.
         </mj-text>
-        <mj-button background-color="#d32f2f" color="#ffffff" font-size="18px" padding="15px 30px" href="https://feriadosruedas.com/inscripcion" font-weight="bold">
+        <mj-button background-color="#b71c1c" color="#ffffff" font-size="16px" padding="14px 28px" border-radius="8px" font-weight="bold" href="formulario.html">
           ¡Participa ahora y no te lo pierdas!
         </mj-button>
-        <mj-image src="https://cdn.pixabay.com/animation/2022/10/26/02/47/02-47-00-744_512.gif" alt="Flecha animada" width="50px" align="center" padding="10px 0 0 0" />
+        <mj-image src="https://cdn.pixabay.com/animation/2022/10/26/02/47/02-47-00-744_512.gif" alt="Flecha animada" width="45px" align="center" padding="8px 0 0 0" />
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#ffffff" padding="10px 20px 20px 20px">
+    <mj-section background-color="#ffffff" padding="0 20px 10px 20px">
       <mj-column>
-        <mj-text font-size="18px" font-weight="bold" color="#d32f2f">
+        <mj-text font-size="18px" font-weight="600" color="#b71c1c">
           ¿Por qué asistir?
         </mj-text>
-        <mj-text font-size="16px" color="#333333" line-height="1.5">
+        <mj-text font-size="15px" color="#444444" line-height="1.6">
           • Novedades en motos y accesorios<br />
           • Pruebas de modelos<br />
           • Ofertas exclusivas<br />
@@ -56,12 +67,43 @@
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#ffffff" padding="0 20px 30px 20px">
+    <mj-section background-color="#ffffff" padding="0 20px 20px 20px">
       <mj-column>
-        <mj-image src="https://i0.wp.com/efe.com/wp-content/uploads/2025/05/johann-zarco-motogp-francia-le-mans.webp?fit=900%2C600&ssl=1" alt="GP Cheste" width="400px" />
+        <mj-image src="https://i0.wp.com/efe.com/wp-content/uploads/2025/05/johann-zarco-motogp-francia-le-mans.webp?fit=900%2C600&ssl=1" alt="GP Cheste" width="250%" border-radius="10px" />
       </mj-column>
     </mj-section>
-    
+
+    <mj-section css-class="soft-red-gradient" padding="20px 0">
+      <mj-column width="33%">
+        <mj-button background-color="rgba(183, 28, 28, 0.1)" color="#b71c1c" font-size="14px" href="mailto:feriavalencia@feriavalencia.com" font-weight="bold" padding="10px 12px" border-radius="5px" border="1px solid #b71c1c">
+          📧 Contáctanos
+        </mj-button>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-button background-color="rgba(183, 28, 28, 0.1)" color="#b71c1c" font-size="14px" href="https://www.feriavalencia.com/" font-weight="bold" padding="10px 12px" border-radius="5px" border="1px solid #b71c1c">
+          🌐 Web
+        </mj-button>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-button background-color="rgba(183, 28, 28, 0.1)" color="#b71c1c" font-size="14px" href="https://dosruedas.feriavalencia.com/" font-weight="bold" padding="10px 12px" border-radius="5px" border="1px solid #b71c1c">
+          ℹ️ Más información
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section css-class="soft-red-gradient" padding="15px 0">
+      <mj-column>
+        <mj-text font-size="15px" color="#b71c1c" align="center" padding-bottom="10px" font-weight="600">
+          Síguenos en redes sociales
+        </mj-text>
+        <mj-social icon-size="30px" font-size="13px" mode="horizontal" align="center">
+          <mj-social-element name="facebook" href="https://facebook.com" background-color="#ffffff" border-radius="50%" border="1px solid #b71c1c" />
+          <mj-social-element name="instagram" href="https://instagram.com" background-color="#ffffff" border-radius="50%" border="1px solid #b71c1c" />
+          <mj-social-element name="twitter" href="https://twitter.com" background-color="#ffffff" border-radius="50%" border="1px solid #b71c1c" />
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
     <mj-section background-color="#f1f1f1" padding="15px">
       <mj-column>
         <mj-text align="center" color="#888888" font-size="12px">
@@ -69,5 +111,6 @@
         </mj-text>
       </mj-column>
     </mj-section>
+
   </mj-body>
 </mjml>
