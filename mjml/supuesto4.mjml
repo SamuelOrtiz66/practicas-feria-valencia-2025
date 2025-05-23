@@ -12,7 +12,7 @@
         /* Para moviles */
         .mobile-hidden { display: none !important; }
         .mobile-text-center { text-align: center !important; }
-        .mobile-button { width: 100% !important; }
+        .mobile-button { width: 600px !important; }
       }
 
       @media only screen and (min-width: 481px) and (max-width: 768px) {
