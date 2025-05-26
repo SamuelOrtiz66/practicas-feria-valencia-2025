@@ -5,8 +5,15 @@
 - `mjml/`: Plantillas de email en MJML.
 - `scripts/`: Código para envío de emails con Node.js.
 - `data/`: Datos de prueba (CSV de suscriptores).
-- `docs/`: Documentación del proyecto.
+- `pdfs/`: Documentación en PDF (análisis, DAFO, planificación, etc.).
 - `mockups/`: Imágenes y capturas del diseño.
+
+### 📄 Documentos destacados
+
+- [Análisis de newsletters de eventos similares](pdfs/analisis_newsletters.pdf)  
+- [DAFO y competencia](pdfs/dafo_feria_dos_ruedas.pdf)  
+- [Planificación y estrategia](pdfs/planificacion_estrategia.pdf)
+
 
 ## Cómo usar
 
