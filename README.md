@@ -10,10 +10,10 @@
 
 ### 📄 Documentos destacados
 
-- [Análisis de newsletters de eventos similares](pdfs/analisis_newsletters.pdf)  
-- [DAFO y competencia](pdfs/dafo_feria_dos_ruedas.pdf)  
-- [Planificación y estrategia](pdfs/planificacion_estrategia.pdf)
-
+- [Análisis de newsletters de eventos similares](PDFs/analisisnewsletters_otrasferiasoeventos.pdf)  
+- [Justificacion del diseño figma](PDFs/justificaciondiseño_figma.pdf)  
+- [Planificación y estrategia](PDFs/ANÁLISIS_Y_PLANIFICACIÓN.pdf)
+- [Documentacion del diagrama](PDFs/documentacion_diagrama_ER.pdf)
 
 ## Cómo usar
 
