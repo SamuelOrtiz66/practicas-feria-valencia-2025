@@ -95,7 +95,7 @@
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#b71c1c" padding="0 20px 20px 20px">
+    <mj-section background-color="#b71c1c" padding="0 20px 10px 20px">
       <mj-group>
         <mj-column width="33%" padding="5px">
           <mj-button background-color="#ffffff" color="#b71c1c" font-size="14px" padding="10px" border-radius="8px" font-weight="bold" href="mailto:feriavalencia@feriavalencia.com" css-class="mobile-button">
@@ -115,10 +115,9 @@
       </mj-group>
     </mj-section>
 
-    <!-- Aquí va el botón Valóranos centrado y con fondo en la misma temática -->
-    <mj-section background-color="#b71c1c" padding="10px 20px">
+    <mj-section background-color="#b71c1c" padding="3px 20px">
       <mj-column>
-        <mj-button href="https://docs.google.com/forms/d/tu_formulario_id" background-color="#f45e43" color="#ffffff" font-size="18px" padding="15px 30px" border-radius="8px" font-weight="bold" text-transform="uppercase" align="center">
+        <mj-button href="https://docs.google.com/forms/d/e/1FAIpQLSdkE9d8ucP24-vcstGlxlFKWT_uBGS-HL9gmkhCuTQypLzQMQ/viewform?usp=dialog" background-color="#ff5722" color="#ffffff" font-size="18px" padding="5px 30px" border-radius="8px" font-weight="bold" text-transform="uppercase" css-class="mobile-button desktop-button">
           Valóranos
         </mj-button>
       </mj-column>
@@ -152,6 +151,7 @@
         <mj-image href="https://www.mapfre.es" src="https://iniciativasempresariales2001.com/wp-content/uploads/2023/07/logotipo-mapfre.png" alt="Mapfre" width="100px" padding="0" />
       </mj-column>
     </mj-section>
+
     <mj-section background-color="#f1f1f1" padding="15px">
       <mj-column>
         <mj-text align="center" color="#888888" font-size="12px" css-class="mobile-text-center">
@@ -162,4 +162,3 @@
 
   </mj-body>
 </mjml>
-
