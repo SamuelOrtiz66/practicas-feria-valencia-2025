@@ -6,7 +6,7 @@ const mjml = require('mjml');
 const mysql = require('mysql2/promise');
 const nodemailer = require('nodemailer');
 
-//1. Conectar a MySQL
+// Función principal
 async function main() {
   const connection = await mysql.createConnection({
     host: process.env.MYSQL_HOST,
@@ -15,46 +15,71 @@ async function main() {
     database: process.env.MYSQL_DB,
   });
 
-  //2. Leer plantilla MJML
+  // Leer plantilla MJML
   const mjmlPath = path.resolve(__dirname, '../mjml/supuesto4.mjml');
   const mjmlTemplateOriginal = fs.readFileSync(mjmlPath, 'utf-8');
 
-  //3. Configurar transporter nodemailer
+  // Elegir proveedor SMTP
+  const provider = process.env.SMTP_PROVIDER || 'gmail';
+
+  const smtpConfig = {
+    gmail: {
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false,
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+    },
+    outlook: {
+      host: 'smtp.office365.com',
+      port: 587,
+      secure: false,
+      user: process.env.OUTLOOK_USER,
+      pass: process.env.OUTLOOK_PASS,
+    },
+  };
+
+  const selectedProvider = smtpConfig[provider];
+
+  if (!selectedProvider) {
+    console.error(`❌ Proveedor SMTP no válido: ${provider}`);
+    process.exit(1);
+  }
+
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT),
-    secure: process.env.SMTP_SECURE === 'true',
+    host: selectedProvider.host,
+    port: selectedProvider.port,
+    secure: selectedProvider.secure,
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
+      user: selectedProvider.user,
+      pass: selectedProvider.pass,
     },
   });
 
   try {
-    //4. Consultar suscriptores
+    // Consultar suscriptores
     const [suscriptores] = await connection.execute('SELECT * FROM suscriptores');
 
     console.log(`Se encontraron ${suscriptores.length} suscriptores. Enviando correos...`);
 
-    //5. Iterar suscriptores y enviar emails personalizados
     for (const suscriptor of suscriptores) {
       try {
-        //Personalizar plantilla MJML con datos del suscriptor
+        // Personalizar plantilla MJML
         let mjmlTemplatePersonalizado = mjmlTemplateOriginal
           .replace(/\{\{nombre\}\}/g, suscriptor.nombre || '')
           .replace(/\{\{empresa\}\}/g, suscriptor.empresa || '')
           .replace(/\{\{idioma\}\}/g, suscriptor.idioma || '');
 
-        //Convertir MJML a HTML
+        // Convertir a HTML
         const { html, errors } = mjml(mjmlTemplatePersonalizado);
         if (errors && errors.length > 0) {
           console.error('Errores en MJML:', errors);
           throw new Error('Error en la plantilla MJML');
         }
 
-        //Enviar correo
+        // Enviar al correo real del suscriptor
         await transporter.sendMail({
-          from: `"Feria Valencia" <${process.env.SMTP_USER}>`,
+          from: `"Feria Valencia" <${selectedProvider.user}>`,
           to: suscriptor.email,
           subject: '¡Participa en el sorteo del GP de Motociclismo | Feria Valencia!',
           html,
@@ -62,7 +87,7 @@ async function main() {
 
         console.log(`✅ Correo enviado a: ${suscriptor.email}`);
 
-        //Registrar envío exitoso en historial_envios
+        // Registrar envío exitoso
         await connection.execute(
           `INSERT INTO historial_envios (suscriptor_id, newsletter_id, fecha_envio, asunto, estado_envio)
            VALUES (?, ?, NOW(), ?, 'enviado')`,
@@ -71,7 +96,7 @@ async function main() {
       } catch (error) {
         console.error(`❌ Error enviando a ${suscriptor.email}:`, error.message);
 
-        //Registrar envío fallido en historial_envios
+        // Registrar fallo
         await connection.execute(
           `INSERT INTO historial_envios (suscriptor_id, newsletter_id, fecha_envio, asunto, estado_envio)
            VALUES (?, ?, NOW(), ?, 'fallido')`,
@@ -84,10 +109,8 @@ async function main() {
   } catch (error) {
     console.error('Error general:', error.message);
   } finally {
-    // 6. Cerrar conexión
     await connection.end();
   }
 }
 
-// Ejecutar script
 main();
