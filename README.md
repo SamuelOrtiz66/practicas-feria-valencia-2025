@@ -10,10 +10,17 @@
 
 ### 📄 Documentos destacados
 
-- [Análisis de newsletters de eventos similares](PDFs/analisisnewsletters_otrasferiasoeventos.pdf)  
-- [Justificacion del diseño figma](PDFs/justificaciondiseño_figma.pdf)  
-- [Planificación y estrategia](PDFs/ANÁLISIS_Y_PLANIFICACIÓN.pdf)
-- [Documentacion del diagrama](PDFs/documentacion_diagrama_ER.pdf)
+- [Análisis y planificacin](PDFs/ANÁLISIS_Y_PLANIFICACIÓN.pdf)
+
+- [DAFO](mockups/dafo%20feria%20dos%20ruedas.png)
+- [Análisis de newsletters de eventos similares](PDFs/analisisnewsletters_otrasferiasoeventos.pdf)
+
+- [Figma](mockups/Newsletter%20GP%20Cheste%20-%20Feria%20Dos%20Ruedas.png)
+👉 [Ver diseño interactivo en Figma](https://www.figma.com/design/M8KqpvKuSKdoHqbuzZXotw/Newsletter-GP-Cheste---Feria-Dos-Ruedas?node-id=0-1&m=dev&t=2rfAaS5zRrYmAN9Y-1)
+- [Justificacion del diseño figma](PDFs/justificaciondiseño_figma.pdf)
+
+- [Diagrama E-R](mockups/diagrama_ER.PNG)
+- [Documentacion del diagrama](PDFs/documentacion_diagrama_ER.pdf)  
 
 ## Cómo usar
 
@@ -25,7 +32,6 @@ node scripts/index.js
 
 3. Consultar documentación en `docs/` para detalles del proyecto.
 
-👉 [Ver diseño interactivo en Figma](https://www.figma.com/design/M8KqpvKuSKdoHqbuzZXotw/Newsletter-GP-Cheste---Feria-Dos-Ruedas?node-id=0-1&m=dev&t=2rfAaS5zRrYmAN9Y-1)
 
 
 ## Contacto
