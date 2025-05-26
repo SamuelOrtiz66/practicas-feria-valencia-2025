@@ -1,0 +1,62 @@
+<mjml>
+  <mj-head>
+    <mj-title>Formulario de Registro - Sorteo GP Cheste</mj-title>
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" />
+    <mj-attributes>
+      <mj-all font-family="Poppins, Arial, sans-serif" />
+      <mj-button background-color="#b71c1c" border-radius="8px" font-weight="bold" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      @media only screen and (max-width: 480px) {
+        .mobile-text-center { text-align: center !important; }
+        .mobile-button { width: 100% !important; }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f5f5f5">
+
+    <mj-section background-color="#b71c1c" padding="20px 0">
+      <mj-column>
+        <mj-text color="#ffffff" font-size="24px" font-weight="bold" align="center" css-class="mobile-text-center">
+          🎉 Regístrate para el Sorteo GP Cheste
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="30px 25px" border-radius="10px" css-class="mobile-text-center" >
+      <mj-column>
+        <mj-text font-size="18px" font-weight="600" color="#b71c1c" padding-bottom="15px" align="center">
+          Completa tus datos para participar y ganar 2 entradas
+        </mj-text>
+
+        <mj-raw>
+          <form action="#" method="POST" style="max-width:600px; margin:auto;">
+            <label for="nombre" style="display:block; font-weight:600; color:#b71c1c; margin-bottom:5px; font-family: Poppins, Arial, sans-serif;">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #b71c1c; border-radius:6px; font-size:16px; font-family: Poppins, Arial, sans-serif;" />
+
+            <label for="email" style="display:block; font-weight:600; color:#b71c1c; margin-bottom:5px; font-family: Poppins, Arial, sans-serif;">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #b71c1c; border-radius:6px; font-size:16px; font-family: Poppins, Arial, sans-serif;" />
+
+            <label style="display:flex; align-items:center; font-size:16px; color:#444444; margin-bottom:20px; font-family: Poppins, Arial, sans-serif;">
+              <input type="checkbox" name="terminos" required style="margin-right:10px;" />
+              Acepto los<a href="https://dosruedas.feriavalencia.com/aviso-legal/" style="color:#b71c1c; text-decoration:none;">términos y condiciones</a>
+            </label>
+
+            <button type="submit" style="background-color:#b71c1c; color:#ffffff; border:none; border-radius:8px; font-weight:bold; font-size:16px; padding:14px 28px; cursor:pointer; width:100%;">¡Participa ahora!</button>
+          </form>
+        </mj-raw>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f1f1f1" padding="15px">
+      <mj-column>
+        <mj-text align="center" color="#888888" font-size="12px" font-family="Poppins, Arial, sans-serif">
+          © Feria Dos Ruedas | Feria Valencia 2025. Todos los derechos reservados.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
