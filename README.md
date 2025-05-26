@@ -18,5 +18,8 @@ node scripts/index.js
 
 3. Consultar documentación en `docs/` para detalles del proyecto.
 
+👉 [Ver diseño interactivo en Figma](https://www.figma.com/design/M8KqpvKuSKdoHqbuzZXotw/Newsletter-GP-Cheste---Feria-Dos-Ruedas?node-id=0-1&m=dev&t=2rfAaS5zRrYmAN9Y-1)
+
+
 ## Contacto
 Samuel Ortiz Heredia samuelortizheredia@gmail.com
