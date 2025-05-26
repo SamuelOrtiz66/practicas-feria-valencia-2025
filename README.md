@@ -5,7 +5,7 @@
 - `mjml/`: Plantillas de email en MJML.
 - `scripts/`: Código para envío de emails con Node.js.
 - `data/`: Datos de prueba (CSV de suscriptores).
-- `pdfs/`: Documentación en PDF (análisis, DAFO, planificación, etc.).
+- `PDFs/`: Documentación en PDF (análisis, documentacion de diseño y del diagrama, planificación, etc.).
 - `mockups/`: Imágenes y capturas del diseño.
 
 ### 📄 Documentos destacados
@@ -16,7 +16,7 @@
 - [Análisis de newsletters de eventos similares](PDFs/analisisnewsletters_otrasferiasoeventos.pdf)
 
 - [Figma](mockups/Newsletter%20GP%20Cheste%20-%20Feria%20Dos%20Ruedas.png)
-👉 [Ver diseño interactivo en Figma](https://www.figma.com/design/M8KqpvKuSKdoHqbuzZXotw/Newsletter-GP-Cheste---Feria-Dos-Ruedas?node-id=0-1&m=dev&t=2rfAaS5zRrYmAN9Y-1)
+- 👉 [Ver diseño interactivo en Figma](https://www.figma.com/design/M8KqpvKuSKdoHqbuzZXotw/Newsletter-GP-Cheste---Feria-Dos-Ruedas?node-id=0-1&m=dev&t=2rfAaS5zRrYmAN9Y-1)
 - [Justificacion del diseño figma](PDFs/justificaciondiseño_figma.pdf)
 
 - [Diagrama E-R](mockups/diagrama_ER.PNG)
