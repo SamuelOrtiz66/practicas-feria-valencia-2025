@@ -13,7 +13,7 @@
 - [Análisis y planificacin](PDFs/ANÁLISIS_Y_PLANIFICACIÓN.pdf)
 
 - [DAFO](mockups/dafo%20feria%20dos%20ruedas.png)
-- [Análisis de newsletters de eventos similares](PDFs/analisisnewsletters_otrasferiasoeventos.pdf)
+- [Análisis de newsletters de eventos similares](PDFs/analisisnewsletter_otrasferiasoeventos.pdf)
 
 - [Figma](mockups/Newsletter%20GP%20Cheste%20-%20Feria%20Dos%20Ruedas.png)
 - 👉 [Ver diseño interactivo en Figma](https://www.figma.com/design/M8KqpvKuSKdoHqbuzZXotw/Newsletter-GP-Cheste---Feria-Dos-Ruedas?node-id=0-1&m=dev&t=2rfAaS5zRrYmAN9Y-1)
