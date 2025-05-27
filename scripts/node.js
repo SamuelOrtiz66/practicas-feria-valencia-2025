@@ -90,7 +90,7 @@ async function main() {
     for (const suscriptor of suscriptores) {
       try {
         const mjmlTemplatePersonalizado = mjmlTemplateOriginal
-          .replace(/\{\{nombre\}\}/g, suscriptor.nombre || '')
+          .replace(/\{\{nombre\}\}/g, suscriptor.nombre || '') // Modificación aquí
           .replace(/\{\{empresa\}\}/g, suscriptor.empresa || '')
           .replace(/\{\{idioma\}\}/g, suscriptor.idioma || '');
 
