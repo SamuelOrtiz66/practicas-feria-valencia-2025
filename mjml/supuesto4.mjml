@@ -116,7 +116,7 @@
       </mj-group>
     </mj-section>
 
-    <mj-section background-color="#b71c1c" padding="3px 20px" vertical-align="middle">
+    <mj-section background-color="#b71c1c" padding="3px 20px">
       <mj-group width="100%" vertical-align="middle" css-class="mobile-text-center" >
         <mj-column width="45%" padding="0" vertical-align="middle">
           <mj-button href="https://docs.google.com/forms/d/e/1FAIpQLSdkE9d8ucP24-vcstGlxlFKWT_uBGS-HL9gmkhCuTQypLzQMQ/viewform?usp=dialog" background-color="#ff5722" color="#ffffff" font-size="18px" padding="10px 24px" border-radius="8px" font-weight="bold" text-transform="uppercase" css-class="mobile-button desktop-button">
