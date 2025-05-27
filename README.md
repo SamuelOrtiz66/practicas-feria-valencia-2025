@@ -16,7 +16,7 @@
 - [Análisis de newsletters de eventos similares](PDFs/analisisnewsletter_otrasferiasoeventos.pdf)
 
 - [Figma](mockups/mockup%20final.png)
-- 👉 [Ver diseño interactivo en Figma](https://www.figma.com/design/M8KqpvKuSKdoHqbuzZXotw/Newsletter-GP-Cheste---Feria-Dos-Ruedas?node-id=0-1&m=dev&t=2rfAaS5zRrYmAN9Y-1)
+- 👉 [Ver diseño interactivo en Figma](https://www.figma.com/design/M8KqpvKuSKdoHqbuzZXotw/Newsletter-GP-Cheste---Feria-Dos-Ruedas?node-id=0-1&m=dev&t=8NmQAji58gKMKOTX-1)
 - [Justificacion del diseño figma](PDFs/justificaciondiseño_figma.pdf)
 
 - [Diagrama E-R](mockups/diagrama_ER.PNG)
@@ -30,7 +30,7 @@ mjml mjml/supuesto4.mjml -o output/newsletter.html
 2. Ejecutar script de envío:
 node scripts/index.js
 
-3. Consultar documentación en `docs/` para detalles del proyecto.
+3. Consultar documentación en `PDFs/` para detalles del proyecto.
 
 
 

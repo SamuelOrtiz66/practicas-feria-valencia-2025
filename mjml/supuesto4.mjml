@@ -52,15 +52,16 @@
     <mj-section background-color="#ffffff" padding="20px 20px 0 20px" css-class="tablet-padding">
       <mj-column>
         <mj-text font-size="18px" font-weight="600" color="#b71c1c" padding-bottom="10px" css-class="mobile-text-center">
-          Organiza Feria Dos Ruedas – Feria Valencia
+          Hola {{firstName}}! 👋
         </mj-text>
         <mj-text font-size="15px" color="#444444" line-height="1.6" css-class="mobile-text-center">
-          La Feria Dos Ruedas, organizada por <strong>Feria Valencia</strong>, sortea <strong>2 entradas para el GP de Motociclismo de Cheste</strong> entre todos los visitantes que completen su inscripción antes del <strong>1 de septiembre</strong>.
+          La Feria Dos Ruedas sortea <strong>2 entradas para el GP de Motociclismo de Cheste</strong> entre todos los visitantes que completen su inscripción antes del <strong>1 de septiembre</strong>.
         </mj-text>
+
         <mj-text font-size="15px" color="#444444" padding-bottom="15px" css-class="mobile-text-center">
           Solo tienes que rellenar el formulario y estarás participando automáticamente.
         </mj-text>
-        <mj-button background-color="#b71c1c" color="#ffffff" font-size="16px" padding="14px 28px" border-radius="8px" font-weight="bold" css-class="mobile-button desktop-button">
+        <mj-button background-color="#b71c1c" color="#ffffff" font-size="16px" padding="14px 28px" border-radius="8px" font-weight="bold" css-class="mobile-button desktop-button" href="https://samuelortiz66.github.io/practicas-feria-valencia-2025/formulario_sorteo.html">
           ¡Participa ahora y no te lo pierdas!
         </mj-button>
         <mj-image src="https://cdn.pixabay.com/animation/2022/10/26/02/47/02-47-00-744_512.gif" alt="Flecha animada" width="45px" align="center" padding="8px 0 0 0" />
@@ -115,12 +116,19 @@
       </mj-group>
     </mj-section>
 
-    <mj-section background-color="#b71c1c" padding="3px 20px">
-      <mj-column>
-        <mj-button href="https://docs.google.com/forms/d/e/1FAIpQLSdkE9d8ucP24-vcstGlxlFKWT_uBGS-HL9gmkhCuTQypLzQMQ/viewform?usp=dialog" background-color="#ff5722" color="#ffffff" font-size="18px" padding="5px 30px" border-radius="8px" font-weight="bold" text-transform="uppercase" css-class="mobile-button desktop-button">
-          Valóranos
-        </mj-button>
-      </mj-column>
+    <mj-section background-color="#b71c1c" padding="3px 20px" vertical-align="middle">
+      <mj-group width="100%" vertical-align="middle" css-class="mobile-text-center" >
+        <mj-column width="45%" padding="0" vertical-align="middle">
+          <mj-button href="https://docs.google.com/forms/d/e/1FAIpQLSdkE9d8ucP24-vcstGlxlFKWT_uBGS-HL9gmkhCuTQypLzQMQ/viewform?usp=dialog" background-color="#ff5722" color="#ffffff" font-size="18px" padding="10px 24px" border-radius="8px" font-weight="bold" text-transform="uppercase" css-class="mobile-button desktop-button">
+            Valóranos
+          </mj-button>
+        </mj-column>
+        <mj-column width="45%" padding="0 0 0 15px" vertical-align="middle">
+          <mj-button href="https://www.facebook.com/sharer/sharer.php?u=https://samuelortiz66.github.io/practicas-feria-valencia-2025/" background-color="#3b5998" color="#ffffff" font-size="18px" padding="10px 24px" border-radius="8px" font-weight="bold" text-transform="uppercase" css-class="mobile-button desktop-button">
+            Compartir
+          </mj-button>
+        </mj-column>
+      </mj-group>
     </mj-section>
 
     <mj-section background-color="#b71c1c" padding="10px 0">
