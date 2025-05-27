@@ -9,7 +9,7 @@
 
     <mj-style inline="inline">
       @media only screen and (max-width: 480px) {
-        /* Para moviles */
+        /*Para moviles*/
         .mobile-hidden { display: none !important; }
         .mobile-text-center { text-align: center !important; }
         .mobile-button { width: 600px !important; }
@@ -52,7 +52,7 @@
     <mj-section background-color="#ffffff" padding="20px 20px 0 20px" css-class="tablet-padding">
       <mj-column>
         <mj-text font-size="18px" font-weight="600" color="#b71c1c" padding-bottom="10px" css-class="mobile-text-center">
-          Hola {{firstName}}! 👋
+          Hola {{nombre}}! 👋
         </mj-text>
         <mj-text font-size="15px" color="#444444" line-height="1.6" css-class="mobile-text-center">
           La Feria Dos Ruedas sortea <strong>2 entradas para el GP de Motociclismo de Cheste</strong> entre todos los visitantes que completen su inscripción antes del <strong>1 de septiembre</strong>.
