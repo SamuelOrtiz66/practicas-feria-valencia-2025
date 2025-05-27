@@ -8,12 +8,53 @@
     </mj-attributes>
 
     <mj-style inline="inline">
-      @media only screen and (max-width: 480px) {
-        /*Para moviles*/
-        .mobile-hidden { display: none !important; }
-        .mobile-text-center { text-align: center !important; }
-        .mobile-button { width: 600px !important; }
-      }
+	@media only screen and (max-width: 480px) {
+	/* Para móviles */
+ 		.mobile-hidden { 
+    display: none !important; 
+  }
+  .mobile-text-center { 
+    text-align: center !important; 
+  }
+  .mobile-button {
+    width: 100% !important;
+    max-width: 320px !important;
+    box-sizing: border-box !important;
+  }
+  .desktop-image {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+  }
+  .tablet-padding {
+    padding: 15px !important;
+  }
+  mj-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  mj-column {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  mj-text {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+mj-group {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+}
+mj-column {
+  width: 32% !important;
+  min-width: 100px !important;
+}
+.mobile-button {
+  width: 100% !important;
+}
+
+  }
+}
 
       @media only screen and (min-width: 481px) and (max-width: 768px) {
         /* Para tablets */

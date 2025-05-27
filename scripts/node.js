@@ -18,7 +18,6 @@ async function importarSuscriptoresDesdeCSV(connection, csvPath) {
       .on('end', async () => {
         try {
           for (const suscriptor of suscriptores) {
-            // Insertar solo si no existe email para evitar duplicados
             await connection.execute(
               `INSERT IGNORE INTO suscriptores (nombre, email, empresa, idioma, fecha_registro) VALUES (?, ?, ?, ?, ?)`,
               [
@@ -52,11 +51,10 @@ async function main() {
     const csvPath = path.resolve(__dirname, '../data/suscriptores.csv');
     await importarSuscriptoresDesdeCSV(connection, csvPath);
 
-    // Leer plantilla MJML
     const mjmlPath = path.resolve(__dirname, '../mjml/supuesto4.mjml');
     const mjmlTemplateOriginal = fs.readFileSync(mjmlPath, 'utf-8');
 
-    // Configurar transporter SMTP según provider (outlook o gmail)
+    // Configurar SMTP
     let transporterConfig;
     if (process.env.SMTP_PROVIDER === 'gmail') {
       transporterConfig = {
@@ -69,7 +67,6 @@ async function main() {
         },
       };
     } else {
-      // outlook por defecto
       transporterConfig = {
         host: 'smtp.office365.com',
         port: 587,
@@ -80,21 +77,21 @@ async function main() {
         },
       };
     }
+
     const transporter = nodemailer.createTransport(transporterConfig);
 
-    // Consultar suscriptores para enviar email
     const [suscriptores] = await connection.execute('SELECT * FROM suscriptores');
-
     console.log(`Se encontraron ${suscriptores.length} suscriptores. Enviando correos...`);
 
     for (const suscriptor of suscriptores) {
       try {
-        const mjmlTemplatePersonalizado = mjmlTemplateOriginal
-          .replace(/\{\{nombre\}\}/g, suscriptor.nombre || '') // Modificación aquí
-          .replace(/\{\{empresa\}\}/g, suscriptor.empresa || '')
-          .replace(/\{\{idioma\}\}/g, suscriptor.idioma || '');
+        // Sustituir variables en MJML
+        const mjmlPersonalizado = mjmlTemplateOriginal
+          .replace(/{{\s*nombre\s*}}/g, suscriptor.nombre || '')
+          .replace(/{{\s*empresa\s*}}/g, suscriptor.empresa || '')
+          .replace(/{{\s*idioma\s*}}/g, suscriptor.idioma || '');
 
-        const { html, errors } = mjml(mjmlTemplatePersonalizado);
+        const { html, errors } = mjml(mjmlPersonalizado);
         if (errors && errors.length > 0) {
           console.error('Errores en MJML:', errors);
           throw new Error('Error en la plantilla MJML');
