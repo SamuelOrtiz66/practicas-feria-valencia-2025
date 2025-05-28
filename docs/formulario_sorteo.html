@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es" dir="auto" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Formulario de Registro - Sorteo GP Cheste</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #b71c1c 0%, #ff5722 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .container {
+      background: #fff;
+      max-width: 500px;
+      width: 90vw;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(183, 28, 28, 0.4);
+      padding: 40px 30px 50px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative background shapes */
+    .container::before,
+    .container::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .container::before {
+      width: 200px;
+      height: 200px;
+      background: #b71c1c;
+      top: -60px;
+      right: -60px;
+    }
+
+    .container::after {
+      width: 300px;
+      height: 300px;
+      background: #ff5722;
+      bottom: -100px;
+      left: -100px;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #b71c1c;
+      text-align: center;
+      margin: 0 0 25px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    form {
+      position: relative;
+      z-index: 1;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #b71c1c;
+      margin-bottom: 8px;
+      user-select: none;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 14px 18px;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+      margin-bottom: 20px;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+      border-color: #b71c1c;
+      outline: none;
+      box-shadow: 0 0 8px rgba(183, 28, 28, 0.5);
+    }
+
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      font-size: 1rem;
+      color: #444444;
+    }
+
+    .checkbox-wrapper input[type="checkbox"] {
+      margin-right: 12px;
+      width: 18px;
+      height: 18px;
+      accent-color: #b71c1c;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .checkbox-wrapper a {
+      color: #b71c1c;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .checkbox-wrapper a:hover {
+      text-decoration: underline;
+    }
+
+    button[type="submit"] {
+      background: linear-gradient(45deg, #b71c1c, #ff5722);
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 18px;
+      width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(255, 87, 34, 0.4);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    button[type="submit"]:hover {
+      background: linear-gradient(45deg, #ff5722, #b71c1c);
+      box-shadow: 0 8px 20px rgba(183, 28, 28, 0.7);
+    }
+
+    footer {
+      margin-top: 25px;
+      text-align: center;
+      font-size: 12px;
+      color: #bbb;
+      user-select: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 30px 20px 40px 20px;
+        max-width: 90vw;
+      }
+
+      button[type="submit"] {
+        font-size: 1rem;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" role="main" aria-labelledby="form-title" aria-describedby="form-desc">
+    <h1 id="form-title" tabindex="0">🎉 Regístrate para el Sorteo GP Cheste</h1>
+    <p id="form-desc" style="color:#666; text-align:center; margin-top: -15px; margin-bottom: 30px; font-weight: 500;">
+      Completa tus datos para participar y ganar 2 entradas
+    </p>
+    <form action="#" method="POST" novalidate>
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required aria-required="true" aria-describedby="nombre-desc" />
+      <span id="nombre-desc" class="sr-only">Campo requerido</span>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required aria-required="true" aria-describedby="email-desc" />
+      <span id="email-desc" class="sr-only">Campo requerido</span>
+
+      <label class="checkbox-wrapper" for="terminos">
+        <input type="checkbox" id="terminos" name="terminos" required aria-required="true" />
+        Acepto los <a href="https://dosruedas.feriavalencia.com/aviso-legal/" target="_blank" rel="noopener noreferrer">términos y condiciones</a>
+      </label>
+
+      <button type="submit" aria-label="Enviar formulario">¡Participa ahora!</button>
+    </form>
+    <footer>
+      © Feria Dos Ruedas | Feria Valencia 2025. Todos los derechos reservados.
+    </footer>
+  </div>
+
+  <style>
+    /* Visually hidden utility for aria-describedby spans */
+    .sr-only {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+    }
+  </style>
+</body>
+
+</html>
+
