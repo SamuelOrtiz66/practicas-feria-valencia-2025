@@ -54,7 +54,7 @@ async function main() {
     const mjmlPath = path.resolve(__dirname, '../mjml/supuesto4.mjml');
     const mjmlTemplateOriginal = fs.readFileSync(mjmlPath, 'utf-8');
 
-    // Configurar SMTP
+    //Configurar SMTP
     let transporterConfig;
     if (process.env.SMTP_PROVIDER === 'gmail') {
       transporterConfig = {
@@ -85,7 +85,7 @@ async function main() {
 
     for (const suscriptor of suscriptores) {
       try {
-        // Sustituir variables en MJML
+        //Sustituir variables en MJML
         const mjmlPersonalizado = mjmlTemplateOriginal
           .replace(/{{\s*nombre\s*}}/g, suscriptor.nombre || '')
           .replace(/{{\s*empresa\s*}}/g, suscriptor.empresa || '')
