@@ -7,12 +7,20 @@ const { exec } = require('child_process');
 
 (async () => {
   try {
+    // Definir carpeta de destino para los archivos
+    const videosDir = path.resolve(__dirname, '../videos_redes');
+
+    // Crear la carpeta si no existe
+    if (!fs.existsSync(videosDir)) {
+      fs.mkdirSync(videosDir);
+    }
+
     // 1. Leer y convertir MJML a HTML
     const mjmlPath = path.resolve(__dirname, '../mjml/supuesto4_reel.mjml');
     const mjmlContent = fs.readFileSync(mjmlPath, 'utf8');
 
     const { html } = mjml(mjmlContent, { minify: true });
-    const htmlPath = path.resolve(__dirname, 'temp.html');
+    const htmlPath = path.resolve(videosDir, 'temp.html');
     fs.writeFileSync(htmlPath, html);
 
     // 2. Lanzar navegador y abrir página con el HTML generado
@@ -23,7 +31,7 @@ const { exec } = require('child_process');
 
     // 3. Iniciar grabación de pantalla virtual
     const recorder = new PuppeteerScreenRecorder(page);
-    const webmPath = path.resolve(__dirname, 'reel.webm');
+    const webmPath = path.resolve(videosDir, 'reel.webm');
 
     console.log('⏳ Iniciando grabación...');
     await recorder.start(webmPath);
@@ -36,7 +44,7 @@ const { exec } = require('child_process');
 
     // 5. Convertir webm a mp4 usando ffmpeg
     console.log('🎥 Convirtiendo a MP4...');
-    const mp4Path = path.resolve(__dirname, 'reel.mp4');
+    const mp4Path = path.resolve(videosDir, 'reel.mp4');
     exec(`ffmpeg -y -i "${webmPath}" -c:v libx264 -preset fast -pix_fmt yuv420p "${mp4Path}"`, (error) => {
       if (error) throw error;
       console.log('✅ Reel generado en:', mp4Path);
@@ -46,3 +54,4 @@ const { exec } = require('child_process');
     console.error('❌ Error:', err);
   }
 })();
+
