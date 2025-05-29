@@ -1,0 +1,12 @@
+# Node modules
+supuesto4/scripts/node_modules/
+
+# Env files (nunca subas contraseñas)
+.env
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db

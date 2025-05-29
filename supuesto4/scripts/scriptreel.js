@@ -2,46 +2,42 @@ const fs = require('fs');
 const path = require('path');
 const mjml = require('mjml');
 const puppeteer = require('puppeteer');
+const { PuppeteerScreenRecorder } = require('puppeteer-screen-recorder');
 const { exec } = require('child_process');
 
 (async () => {
   try {
-    // 1. Leer MJML
-    const mjmlPath = path.resolve(__dirname, '../mjml/supuesto4.mjml');
+    // 1. Leer y convertir MJML a HTML
+    const mjmlPath = path.resolve(__dirname, '../mjml/supuesto4_reel.mjml');
     const mjmlContent = fs.readFileSync(mjmlPath, 'utf8');
 
-    // 2. Convertir a HTML
     const { html } = mjml(mjmlContent, { minify: true });
-
-    // 3. Guardar HTML temporal
     const htmlPath = path.resolve(__dirname, 'temp.html');
     fs.writeFileSync(htmlPath, html);
 
-    // 4. Capturar video con Puppeteer y FFmpeg
-    const browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox'],
-    });
-
+    // 2. Lanzar navegador y abrir página con el HTML generado
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
     await page.setViewport({ width: 1080, height: 1920 });
     await page.goto(`file://${htmlPath}`, { waitUntil: 'networkidle0' });
 
+    // 3. Iniciar grabación de pantalla virtual
+    const recorder = new PuppeteerScreenRecorder(page);
     const webmPath = path.resolve(__dirname, 'reel.webm');
 
-    // Lanzar ffmpeg para grabar la pantalla (requiere X11, probablemente no funcione en servidor sin GUI)
-    const ffmpeg = exec(`ffmpeg -y -f x11grab -video_size 1080x1920 -i :99.0 -t 5 -r 30 ${webmPath}`);
+    console.log('⏳ Iniciando grabación...');
+    await recorder.start(webmPath);
 
-    console.log('⏳ Reproduciendo HTML para captura...');
-    // Esperar 5 segundos usando Promise + setTimeout (compatible con versiones viejas)
+    // 4. Esperar 5 segundos con Promise y setTimeout
     await new Promise(resolve => setTimeout(resolve, 5000));
 
+    await recorder.stop();
     await browser.close();
-    ffmpeg.kill('SIGINT');
 
-    // 5. Convertir a MP4
+    // 5. Convertir webm a mp4 usando ffmpeg
+    console.log('🎥 Convirtiendo a MP4...');
     const mp4Path = path.resolve(__dirname, 'reel.mp4');
-    exec(`ffmpeg -y -i ${webmPath} -c:v libx264 -preset fast -pix_fmt yuv420p ${mp4Path}`, (error) => {
+    exec(`ffmpeg -y -i "${webmPath}" -c:v libx264 -preset fast -pix_fmt yuv420p "${mp4Path}"`, (error) => {
       if (error) throw error;
       console.log('✅ Reel generado en:', mp4Path);
     });
