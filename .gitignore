@@ -1,12 +1,12 @@
-# Node modules
+#Node modules
 supuesto4/scripts/node_modules/
 
-# Env files (nunca subas contraseñas)
+#Env
 .env
 
-# Logs
+#Logs
 *.log
 
-# Sistema
+#Sistema
 .DS_Store
 Thumbs.db
