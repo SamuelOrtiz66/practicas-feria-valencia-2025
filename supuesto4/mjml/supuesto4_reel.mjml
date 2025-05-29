@@ -170,13 +170,13 @@
     <mj-section background-color="#b71c1c" padding="3px 10px">
       <mj-group width="100%" vertical-align="middle" css-class="mobile-text-center botones-sociales-group">
         <mj-column width="48%" padding="0 1%" vertical-align="middle">
-          <mj-button href="https://docs.google.com/forms/d/e/1FAIpQLSdkE9d8ucP24-vcstGlxlFKWT_uBGS-HL9gmkhCuTQypLzQMQ/viewform?usp=dialog" background-color="#ff5722" color="#ffffff" font-size="18px" padding="10px 5px" border-radius="8px" font-weight="bold" css-class="mobile-button">
-            ⭐️ Valóranos
+          <mj-button href="https://docs.google.com/forms/d/e/1FAIpQLSdkE9d8ucP24-vcstGlxlFKWT_uBGS-HL9gmkhCuTQypLzQMQ/viewform?usp=dialog" background-color="#ff5722" color="#ffffff" font-size="18px" padding="10px 5px" border-radius="8px" font-weight="bold" text-transform="uppercase" css-class="mobile-button desktop-button">
+            Valóranos
           </mj-button>
         </mj-column>
         <mj-column width="48%" padding="0 1%" vertical-align="middle">
-          <mj-button href="https://dosruedas.feriavalencia.com/" background-color="#ff5722" color="#ffffff" font-size="18px" padding="10px 5px" border-radius="8px" font-weight="bold" css-class="mobile-button">
-            📲 Compartir
+          <mj-button href="https://www.facebook.com/sharer/sharer.php?u=https://samuelortiz66.github.io/practicas-feria-valencia-2025/" background-color="#3b5998" color="#ffffff" font-size="18px" padding="10px 5px" border-radius="8px" font-weight="bold" text-transform="uppercase" css-class="mobile-button desktop-button">
+            Compartir
           </mj-button>
         </mj-column>
       </mj-group>
@@ -184,8 +184,37 @@
 
     <mj-section background-color="#b71c1c" padding="10px 0">
       <mj-column>
-        <mj-text align="center" font-size="13px" color="#fbeaea">
-          © Feria Valencia 2025 - Todos los derechos reservados
+        <mj-text align="center" font-size="16px" font-weight="bold" color="#ffffff" padding-bottom="10px" css-class="mobile-text-center">
+          Síguenos en nuestras redes sociales
+        </mj-text>
+        <mj-social mode="horizontal" align="center" font-size="15px" icon-size="30px" padding="0">
+          <mj-social-element name="facebook" href="https://facebook.com"></mj-social-element>
+          <mj-social-element name="instagram" href="https://instagram.com"></mj-social-element>
+          <mj-social-element name="twitter" href="https://twitter.com"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#b71c1c" padding="10px 20px">
+      <mj-column width="40%" vertical-align="middle" padding="0 10px 0 0">
+        <mj-text font-size="13px" color="#ffffff" font-weight="600" padding="0 0 4px 0" line-height="1.3" align="center" css-class="mobile-text-center">
+          Organizado por
+        </mj-text>
+        <mj-image href="https://www.feriavalencia.com/" src="https://dosruedas.feriavalencia.com/wp-content/uploads/2025/04/FV_IDENTIDADlogo-768x425-1.png" alt="Feria Valencia" width="120px" padding="0" />
+      </mj-column>
+
+      <mj-column width="30%" vertical-align="middle" padding="0 0 0 10px">
+        <mj-text font-size="13px" color="#ffffff" font-weight="600" padding="0 0 4px 0" align="center" css-class="mobile-text-center">
+          Patrocinado por
+        </mj-text>
+        <mj-image href="https://www.mapfre.es" src="https://iniciativasempresariales2001.com/wp-content/uploads/2023/07/logotipo-mapfre.png" alt="Mapfre" width="100px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f1f1f1" padding="15px">
+      <mj-column>
+        <mj-text align="center" color="#888888" font-size="12px" css-class="mobile-text-center">
+          © Feria Dos Ruedas | Feria Valencia 2025. Todos los derechos reservados.
         </mj-text>
       </mj-column>
     </mj-section>
