@@ -12,13 +12,29 @@
 
   <mj-body background-color="#121212">
 
-    <!-- HEADER -->
-    <mj-section background-color="#1e1e1e" padding="12px 0">
+    <!-- SALUDO PERSONALIZADO -->
+    <mj-section background-color="#121212" padding="20px 20px 10px 20px">
       <mj-column>
+        <mj-text color="#ff6200" font-size="16px" font-weight="700" line-height="1.2">
+          ¡Hola {{nombre}}!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- HEADER con gif de fondo y logo centrado encima (ajustado para menos altura) -->
+    <mj-section
+      full-width="full-width"
+      background-url="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWVjenl1bmNwMmQyaTR5YWxvNmY4NDgzMmJ1bnN6dXdpaGcwaTYyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XAwZ54RCXropXS8ZOJ/giphy.gif"
+      background-repeat="no-repeat"
+      background-size="cover"
+      background-position="center"
+      padding="15px 0"
+    >
+      <mj-column vertical-align="middle">
         <mj-image
-          src="https://www.saloncomicvalencia.com/wp-content/uploads/2023/10/logo-color-vlccomic.png"
-          alt="Salón del Cómic de València"
-          width="160px"
+          src="https://www.saloncomicvalencia.com/wp-content/uploads/2023/11/LogoSCV-negro-300x274.png"
+          alt="Logo Salón del Cómic de València"
+          width="140px"
           padding="0"
         />
       </mj-column>
@@ -61,11 +77,13 @@
     <mj-section background-color="#1e1e1e" padding="30px 20px" border-radius="24px">
       <mj-column>
         <mj-image
-          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWVjenl1bmNwMmQyaTR5YWxvNmY4NDgzMmJ1bnN6dXdpaGcwaTYyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XAwZ54RCXropXS8ZOJ/giphy.gif"
-          alt="Cartel oficial Salón del Cómic animado"
+          src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/03/SALON-DEL-COMIC-DE-VALENCIA-2024-14.jpg"
+          alt="Salón del Cómic de València"
           border-radius="16px"
           padding="0"
-          height="220px"
+          height="320px"
+          width="420px"
+          fluid-on-mobile="true"
         />
         <mj-text color="#ff6200" font-weight="700" font-size="20px" padding-top="16px" padding-bottom="6px">
           🎨 Cartel Oficial 2025 Revelado
@@ -121,7 +139,7 @@
           <table cellpadding="8" cellspacing="0" width="100%" style="color: #dddddd; font-size: 14px; margin: 0 auto;">
             <tr style="border-bottom: 1px solid #333333;">
               <td align="center" width="30%">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Ken_Niimura_2017.png/220px-Ken_Niimura_2017.png" alt="Ken Niimura" width="90" style="border-radius: 12px;" />
+                <img src="https://www.astiberri.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb090IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--11d7494dd0efd37d38eb70447adab44f9d85f740/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmtDckFOcEFyd0MiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--d3102f71a9844341fa4a463f4a5a85d2ed0462c1/KenNiimura.jpg" alt="Ken Niimura" width="90" style="border-radius: 12px;" />
               </td>
               <td style="padding-left: 12px;" valign="middle">
                 <strong>Ken Niimura</strong><br/>
@@ -130,7 +148,7 @@
             </tr>
             <tr style="border-bottom: 1px solid #333333;">
               <td align="center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Ana_Oncina_2018.jpg" alt="Ana Oncina" width="90" style="border-radius: 12px;" />
+                <img src="https://anaoncina.com/media/4004e6aa-84dd-4108-b927-d8c5acee4b90.jpg" alt="Ana Oncina" width="90" style="border-radius: 12px;" />
               </td>
               <td style="padding-left: 12px;" valign="middle">
                 <strong>Ana Oncina</strong><br/>
@@ -139,7 +157,7 @@
             </tr>
             <tr>
               <td align="center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Mike_McKone.png" alt="Mike McKone" width="90" style="border-radius: 12px;" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/10.18.09MikeMcKoneByLuigiNovi.jpg" alt="Mike McKone" width="90" style="border-radius: 12px;" />
               </td>
               <td style="padding-left: 12px;" valign="middle">
                 <strong>Mike McKone</strong><br/>
