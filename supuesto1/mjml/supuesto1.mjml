@@ -8,10 +8,32 @@
       <mj-text line-height="1.4" font-size="14px" />
       <mj-button border-radius="6px" font-weight="600" font-size="14px" padding="10px 20px" />
     </mj-attributes>
+
+    <!-- Media query para móvil: ajusta textos, botones e imágenes -->
+    <mj-style inline="inline">
+      @media only screen and (max-width:480px) {
+        .hero-title {
+          font-size: 20px !important;
+          line-height: 1.3 !important;
+        }
+        .hero-text {
+          font-size: 13px !important;
+        }
+        .button-adjust {
+          padding: 10px 20px !important;
+          font-size: 14px !important;
+        }
+        .artist-img {
+          width: 70px !important;
+        }
+        .artist-name {
+          font-size: 13px !important;
+        }
+      }
+    </mj-style>
   </mj-head>
 
   <mj-body background-color="#121212">
-
     <!-- SALUDO PERSONALIZADO -->
     <mj-section background-color="#121212" padding="20px 20px 10px 20px">
       <mj-column>
@@ -21,7 +43,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- HEADER con gif de fondo y logo centrado encima (ajustado para menos altura) -->
+    <!-- HEADER -->
     <mj-section
       full-width="full-width"
       background-url="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWVjenl1bmNwMmQyaTR5YWxvNmY4NDgzMmJ1bnN6dXdpaGcwaTYyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XAwZ54RCXropXS8ZOJ/giphy.gif"
@@ -44,6 +66,7 @@
     <mj-section background-color="#ff6200" padding="30px 20px">
       <mj-column>
         <mj-text
+          css-class="hero-title"
           font-size="24px"
           font-weight="700"
           color="#ffffff"
@@ -53,6 +76,7 @@
           ¡Bienvenido al Boletín Oficial del Salón del Cómic de València!
         </mj-text>
         <mj-text
+          css-class="hero-text"
           font-size="14px"
           font-weight="500"
           color="#fff3e0"
@@ -61,6 +85,7 @@
           Entérate de las últimas noticias, invitados especiales y promociones exclusivas para amantes del cómic.
         </mj-text>
         <mj-button
+          css-class="button-adjust"
           href="https://www.saloncomicvalencia.com"
           background-color="#ffffff"
           color="#ff6200"
@@ -92,6 +117,7 @@
           El nuevo cartel animado del Salón del Cómic de València 2025, ilustrado por David López, ya está disponible. Descubre la obra que representa la esencia del evento de este año.
         </mj-text>
         <mj-button
+          css-class="button-adjust"
           href="https://www.saloncomicvalencia.com/exposiciones-2025/"
           background-color="#ff6200"
           color="#ffffff"
@@ -115,6 +141,7 @@
           Aprovecha nuestro descuento exclusivo para los lectores del boletín. Compra tus entradas antes del 15 de junio y disfruta de esta promoción única.
         </mj-text>
         <mj-button
+          css-class="button-adjust"
           href="https://www.saloncomicvalencia.com/entradas/"
           background-color="#1e1e1e"
           color="#ff6200"
@@ -139,27 +166,27 @@
           <table cellpadding="8" cellspacing="0" width="100%" style="color: #dddddd; font-size: 14px; margin: 0 auto;">
             <tr style="border-bottom: 1px solid #333333;">
               <td align="center" width="30%">
-                <img src="https://www.astiberri.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb090IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--11d7494dd0efd37d38eb70447adab44f9d85f740/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmtDckFOcEFyd0MiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--d3102f71a9844341fa4a463f4a5a85d2ed0462c1/KenNiimura.jpg" alt="Ken Niimura" width="90" style="border-radius: 12px;" />
+                <img src="https://www.astiberri.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb090IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--11d7494dd0efd37d38eb70447adab44f9d85f740/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmtDckFOcEFyd0MiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--d3102f71a9844341fa4a463f4a5a85d2ed0462c1/KenNiimura.jpg" width="90" style="border-radius: 12px;" />
               </td>
-              <td style="padding-left: 12px;" valign="middle">
+              <td style="padding-left: 12px;" valign="middle" class="artist-name">
                 <strong>Ken Niimura</strong><br/>
                 Ilustrador y autor reconocido internacionalmente.
               </td>
             </tr>
             <tr style="border-bottom: 1px solid #333333;">
               <td align="center">
-                <img src="https://anaoncina.com/media/4004e6aa-84dd-4108-b927-d8c5acee4b90.jpg" alt="Ana Oncina" width="90" style="border-radius: 12px;" />
+                <img src="https://anaoncina.com/media/4004e6aa-84dd-4108-b927-d8c5acee4b90.jpg" alt="Ana Oncina" class="artist-img" width="90" style="border-radius: 12px;" />
               </td>
-              <td style="padding-left: 12px;" valign="middle">
+              <td style="padding-left: 12px;" valign="middle" class="artist-name">
                 <strong>Ana Oncina</strong><br/>
                 Creadora de «Croqueta y empanadilla».
               </td>
             </tr>
             <tr>
               <td align="center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/10.18.09MikeMcKoneByLuigiNovi.jpg" alt="Mike McKone" width="90" style="border-radius: 12px;" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/10.18.09MikeMcKoneByLuigiNovi.jpg" alt="Mike McKone" class="artist-img" width="90" style="border-radius: 12px;" />
               </td>
-              <td style="padding-left: 12px;" valign="middle">
+              <td style="padding-left: 12px;" valign="middle" class="artist-name">
                 <strong>Mike McKone</strong><br/>
                 Dibujante de Marvel Comics.
               </td>
@@ -168,6 +195,7 @@
         </mj-raw>
 
         <mj-button
+          css-class="button-adjust"
           href="https://www.saloncomicvalencia.com/invitados/"
           background-color="#ff6200"
           color="#ffffff"
@@ -195,6 +223,7 @@
           ¿Quieres participar como expositor o voluntario?
         </mj-text>
         <mj-button
+          css-class="button-adjust"
           href="https://www.saloncomicvalencia.com/participa/"
           background-color="#1e1e1e"
           color="#ff6200"
