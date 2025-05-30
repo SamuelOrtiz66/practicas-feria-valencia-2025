@@ -106,18 +106,19 @@ async function main() {
 
         console.log(`✅ Correo enviado a: ${suscriptor.email}`);
 
+        // Insertar en historial_envios con boletin_id = 1
         await connection.execute(
-          `INSERT INTO historial_envios (suscriptor_id, asunto, estado_envio, fecha_envio, error_mensaje)
-           VALUES (?, ?, 'enviado', NOW(), NULL)`,
-          [suscriptor.id, '¡Participa en el sorteo del GP de Motociclismo | Feria Valencia!']
+          `INSERT INTO historial_envios (suscriptor_id, boletin_id, asunto, estado_envio, fecha_envio, error_mensaje)
+           VALUES (?, ?, ?, 'enviado', NOW(), NULL)`,
+          [suscriptor.id, 1, '¡Participa en el sorteo del GP de Motociclismo | Feria Valencia!']
         );
       } catch (error) {
         console.error(`❌ Error enviando a ${suscriptor.email}:`, error.message);
 
         await connection.execute(
-          `INSERT INTO historial_envios (suscriptor_id, asunto, estado_envio, fecha_envio, error_mensaje)
-           VALUES (?, ?, 'error', NOW(), ?)`,
-          [suscriptor.id, '¡Participa en el sorteo del GP de Motociclismo | Feria Valencia!', error.message]
+          `INSERT INTO historial_envios (suscriptor_id, boletin_id, asunto, estado_envio, fecha_envio, error_mensaje)
+           VALUES (?, ?, ?, 'error', NOW(), ?)`,
+          [suscriptor.id, 1, '¡Participa en el sorteo del GP de Motociclismo | Feria Valencia!', error.message]
         );
       }
     }
