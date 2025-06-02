@@ -59,6 +59,7 @@ EMAIL_SERVICE=gmail # o 'outlook'
 ### 4.Ejecutar el envio de correos
 ```bash
 node scripts/node.js
+```
 
 Este script:
 Actualiza base de datos con los datos del .csv
@@ -70,19 +71,21 @@ Personaliza el newsletter con el nombre de cada usuario
 Convierte MJML a HTML
 
 Envía el correo por Gmail u Outlook según el proveedor de cada usuario
-```
+
 
 ### 5. Generar Reel para Redes Sociales
+```bash
 node scripts/scriptreels.js
+```
 
 Crea un vídeo del newsletter listo para subir como Reel en Instagram o TikTok.
 
 ### 🗃️ Bases de Datos
 Usamos MySQL alojado en AWS EC2
 
-Estructura de tablas:
+***Estructura de tablas:***
 
-suscriptores
+- [suscriptores:]
 nombre
 email
 empresa
@@ -90,13 +93,13 @@ idioma
 fecha_registro
 email_provider
 
-newsletters
+- [newsletters:]
 id
 título
 contenido
 fecha_creación
 
-historial_envios
+- [historial_envios:]
 suscriptor_id
 newsletter_id
 fecha_envio
@@ -106,33 +109,33 @@ estado_envio
 - [Diagrama E-R](../mockups/diagrama_ER.PNG)
 
 ### 💡 Personalizacion
-Cada correo se adapta al suscriptor:
+- Cada correo se adapta al suscriptor:
 
-{{nombre}} → nombre personalizado
+- {{nombre}} → nombre personalizado
 
-Diseño responsive con 3 media queries (oculta elementos en móvil)
+- Diseño responsive con 3 media queries (oculta elementos en móvil)
 
-Compatible con Outlook, Gmail y móviles
+- Compatible con Outlook, Gmail y móviles
 
 ### 📊 Test con usuarios
-Se enviaron newsletters reales a más de 10 personas
+- Se enviaron newsletters reales a más de 10 personas
 
-Enlace a formulario de feedback desde el correo (Google Forms)
+- Enlace a formulario de feedback desde el correo (Google Forms)
 
-Opiniones, valoraciones y sugerencias fueron consideradas
+- Opiniones, valoraciones y sugerencias fueron consideradas
 
 ### 📱 Redes Sociales
-El script scriptreels.js genera un vídeo reel del correo
+- El script scriptreels.js genera un vídeo reel del correo
 
-Pensado para su publicación en:
+- Pensado para su publicación en:
 
-Instagram Reels
+- Instagram Reels
 
-TikTok
+- TikTok
 
-Stories de WhatsApp o Telegram
+- Stories de WhatsApp o Telegram
 
-LinkedIn y otras redes
+- LinkedIn y otras redes
 
 ### 📂 Documentación y Recursos Visuales
 - [Análisis y planificacin](PDFs/ANÁLISIS_Y_PLANIFICACIÓN.pdf)
