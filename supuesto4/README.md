@@ -125,9 +125,9 @@ estado_envio
 - Opiniones, valoraciones y sugerencias fueron consideradas
 
 ### 📱 Redes Sociales
-- El script scriptreels.js genera un vídeo reel del correo
+- *** El script scriptreels.js genera un vídeo reel del correo ***
 
-- Pensado para su publicación en:
+- *** Pensado para su publicación en: ***
 
 - Instagram Reels
 
@@ -151,10 +151,10 @@ estado_envio
 - [Documentacion del diagrama](PDFs/documentacion_diagrama_ER.pdf)  
 
 ### 🧑‍💻 Autor
-Samuel Ortiz Heredia
-Proyecto desarrollado para Feria Valencia 2025
+***Samuel Ortiz Heredia***
+- Proyecto desarrollado para Feria Valencia 2025
 
 Repositorio:
-🔗 github.com/SamuelOrtiz66/practicas-feria-valencia-2025
+- 🔗 github.com/SamuelOrtiz66/practicas-feria-valencia-2025
 
-📧 Contacto: samuelortizheredia@gmail.com
+- 📧 Contacto: samuelortizheredia@gmail.com
