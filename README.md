@@ -19,10 +19,7 @@ Este repositorio contiene dos proyectos independientes desarrollados para la **F
 
 📌 Cada carpeta contiene su propio `README.md` con una **guía paso a paso** para su instalación, uso y despliegue.
 
----
-👨‍💻 Autor: Samuel Ortiz Heredia  
-📧 Contacto: [samuelortizheredia@gmail.com](mailto:samuelortizheredia@gmail.com)  
-🔗 Repositorio: [github.com/SamuelOrtiz66/practicas-feria-valencia-2025](https://github.com/SamuelOrtiz66/practicas-feria-valencia-2025)
+
 
 ## Estructura
 
@@ -33,4 +30,7 @@ Este repositorio contiene dos proyectos independientes desarrollados para la **F
 - `mockups/`: Imágenes y capturas del diseño.
 
 ## Contacto
-Samuel Ortiz Heredia samuelortizheredia@gmail.com
+---
+👨‍💻 Autor: Samuel Ortiz Heredia  
+📧 Contacto: [samuelortizheredia@gmail.com](mailto:samuelortizheredia@gmail.com)  
+🔗 Repositorio: [github.com/SamuelOrtiz66/practicas-feria-valencia-2025](https://github.com/SamuelOrtiz66/practicas-feria-valencia-2025)
