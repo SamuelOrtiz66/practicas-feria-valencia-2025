@@ -148,13 +148,13 @@ estado_envio
 
 - [Análisis y planificacin](../PDFs/ANÁLISIS_Y_PLANIFICACIÓN.pdf)
 
-- [DAFO](../mockups/dafo%20feria%20dos%20ruedas.png)
-- [Análisis de newsletters de eventos similares](../PDFs/analisisnewsletter_otrasferiasoeventos.pdf)
-- [Figma](../mockups/mockup%20final.png)
+- [DAFO](/supuesto4/mockups/dafo%20feria%20dos%20ruedas.png)
+- [Análisis de newsletters de eventos similares](/supuesto4/PDFs/analisisnewsletter_otrasferiasoeventos.pdf)
+- [Figma](/supuesto4/mockups/mockup%20final.png)
 - 👉 [Ver diseño interactivo en Figma](https://www.figma.com/design/M8KqpvKuSKdoHqbuzZXotw/Newsletter-GP-Cheste---Feria-Dos-Ruedas?node-id=0-1&m=dev&t=8NmQAji58gKMKOTX-1)
-- [Justificacion del diseño figma](../PDFs/justificaciondiseño_figma.pdf)
-- [Diagrama E-R](../mockups/diagrama_ER.PNG)
-- [Documentacion del diagrama](../PDFs/documentacion_diagrama_ER.pdf)  
+- [Justificacion del diseño figma](/supuesto4/PDFs/justificaciondiseño_figma.pdf)
+- [Diagrama E-R](/supuesto4/mockups/diagrama_ER.PNG)
+- [Documentacion del diagrama](/supuesto4/PDFs/documentacion_diagrama_ER.pdf)  
 
 ### 🧑‍💻 Autor
 
