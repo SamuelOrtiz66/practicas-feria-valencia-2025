@@ -49,23 +49,23 @@
     </mj-section>
 
     <!-- HEADER -->
-    <mj-section
-      full-width="full-width"
-      background-url="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWVjenl1bmNwMmQyaTR5YWxvNmY4NDgzMmJ1bnN6dXdpaGcwaTYyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XAwZ54RCXropXS8ZOJ/giphy.gif"
-      background-repeat="no-repeat"
-      background-size="cover"
-      background-position="center"
-      padding="15px 0"
-    >
-      <mj-column vertical-align="middle">
-        <mj-image
-          src="https://www.saloncomicvalencia.com/wp-content/uploads/2023/11/LogoSCV-negro-300x274.png"
-          alt="Logo Salón del Cómic de València"
-          width="140px"
-          padding="0"
-        />
-      </mj-column>
-    </mj-section>
+  <mj-section
+    full-width
+    background-url="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWVjenl1bmNwMmQyaTR5YWxvNmY4NDgzMmJ1bnN6dXdpaGcwaTYyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XAwZ54RCXropXS8ZOJ/giphy.gif"
+    background-repeat="no-repeat"
+    background-size="cover"
+    background-position="center"
+    padding="15px 0"
+  >
+    <mj-column vertical-align="middle">
+      <mj-image
+        src="https://www.saloncomicvalencia.com/wp-content/uploads/2023/11/LogoSCV-negro-300x274.png"
+        alt="Logo Salón del Cómic de València"
+        width="140px"
+        padding="0"
+      />
+    </mj-column>
+  </mj-section>
 
     <!-- HERO -->
     <mj-section background-color="#ff6200" padding="30px 20px">
@@ -275,9 +275,7 @@
     <mj-section background-color="#1e1e1e" padding="16px 0">
       <mj-column>
         <mj-text font-size="12px" color="#999999" padding-top="16px" align="center">
-          © 2025 Salón del Cómic de València. Todos los derechos reservados.<br/>
-          Este correo fue enviado a {{email}}.<br/>
-          <a href="{{unsubscribe_url}}" style="color:#ff6200; text-decoration: underline;">Darse de baja</a>
+          © 2025 Salón del Cómic de València. Todos los derechos reservados.
         </mj-text>
       </mj-column>
     </mj-section>
