@@ -51,12 +51,14 @@ npm install
 ```
 
 ### 3 .Configuracion
+
 Crea un archivo .env con las siguientes variables:
 EMAIL_USER=tuemail@gmail.com
 EMAIL_PASS=tucontraseña
 EMAIL_SERVICE=gmail # o 'outlook'
 
 ### 4.Ejecutar el envio de correos
+
 ```bash
 node scripts/node.js
 ```
@@ -74,13 +76,15 @@ Envía el correo por Gmail u Outlook según el proveedor de cada usuario
 
 
 ### 5. Generar Reel para Redes Sociales
+
 ```bash
 node scripts/scriptreels.js
 ```
 
-1. Crea un vídeo del newsletter listo para subir como Reel en Instagram o TikTok.
+- Crea un vídeo del newsletter listo para subir como Reel en Instagram o TikTok.
 
 ### 🗃️ Bases de Datos
+
 - Usamos MySQL alojado en AWS EC2
 
 ***Estructura de tablas:***
@@ -109,6 +113,7 @@ estado_envio
 - [Diagrama E-R](../mockups/diagrama_ER.PNG)
 
 ### 💡 Personalizacion
+
 - Cada correo se adapta al suscriptor:
 
 - {{nombre}} → nombre personalizado
@@ -118,6 +123,7 @@ estado_envio
 - Compatible con Outlook, Gmail y móviles
 
 ### 📊 Test con usuarios
+
 - Se enviaron newsletters reales a más de 10 personas
 
 - Enlace a formulario de feedback desde el correo (Google Forms)
@@ -125,6 +131,7 @@ estado_envio
 - Opiniones, valoraciones y sugerencias fueron consideradas
 
 ### 📱 Redes Sociales
+
 - *** El script scriptreels.js genera un vídeo reel del correo ***
 
 - *** Pensado para su publicación en: ***
@@ -138,6 +145,7 @@ estado_envio
 - LinkedIn y otras redes
 
 ### 📂 Documentación y Recursos Visuales
+
 - [Análisis y planificacin](../PDFs/ANÁLISIS_Y_PLANIFICACIÓN.pdf)
 
 - [DAFO](../mockups/dafo%20feria%20dos%20ruedas.png)
@@ -149,10 +157,11 @@ estado_envio
 - [Documentacion del diagrama](../PDFs/documentacion_diagrama_ER.pdf)  
 
 ### 🧑‍💻 Autor
+
 ***Samuel Ortiz Heredia***
 - Proyecto desarrollado para Feria Valencia 2025
 
-*** Repositorio:**
+*** Repositorio: ***
 - 🔗 github.com/SamuelOrtiz66/practicas-feria-valencia-2025
 
 - 📧 Contacto: samuelortizheredia@gmail.com
