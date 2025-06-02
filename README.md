@@ -28,9 +28,8 @@ Este repositorio contiene dos proyectos independientes desarrollados para la **F
 - `data/`: Datos de prueba (CSV de suscriptores).
 - `PDFs/`: Documentación en PDF (análisis, documentacion de diseño y del diagrama, planificación, etc.).
 - `mockups/`: Imágenes y capturas del diseño.
-
-## Contacto
 ---
+## Contacto
 👨‍💻 Autor: Samuel Ortiz Heredia  
 📧 Contacto: [samuelortizheredia@gmail.com](mailto:samuelortizheredia@gmail.com)  
 🔗 Repositorio: [github.com/SamuelOrtiz66/practicas-feria-valencia-2025](https://github.com/SamuelOrtiz66/practicas-feria-valencia-2025)
