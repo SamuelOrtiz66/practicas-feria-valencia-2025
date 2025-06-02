@@ -85,11 +85,12 @@ async function main() {
 
     for (const suscriptor of suscriptores) {
       try {
-        // Sustituir variables en MJML
+        // Sustituir variables en MJML, incluyendo {{email}}
         const mjmlPersonalizado = mjmlTemplateOriginal
           .replace(/{{\s*nombre\s*}}/g, suscriptor.nombre || '')
           .replace(/{{\s*empresa\s*}}/g, suscriptor.empresa || '')
-          .replace(/{{\s*idioma\s*}}/g, suscriptor.idioma || '');
+          .replace(/{{\s*idioma\s*}}/g, suscriptor.idioma || '')
+          .replace(/{{\s*email\s*}}/g, suscriptor.email || '');
 
         const { html, errors } = mjml(mjmlPersonalizado);
         if (errors && errors.length > 0) {
