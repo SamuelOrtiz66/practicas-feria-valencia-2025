@@ -16,11 +16,13 @@ supuesto4/
 ├── data/                 # CSV con datos de suscriptores
 │   └── suscriptores.csv
 ├── mjml/                 # Plantilla del email en MJML
-│   └── plantilla.mjml
+│   ├── formulario_sorteo.mjml
+│   ├── supuesto4.mjml
+│   └── supuesto4_reel.mjml
 ├── mockups/              # Material de diseño y análisis
-│   ├── diagrama-er.png
-│   ├── mockup-figma.png
-│   └── dafo.png
+│   ├── diagrama-ER.png
+│   ├── mockup final.png
+│   └── dafo feria dos ruedas.png
 ├── pdfs/                 # Documentación final y por partes
 │   └── informe-final.pdf
 ├── scripts/              # Automatización de envío y creación de reels
@@ -28,6 +30,8 @@ supuesto4/
 │   ├── scriptreels.js
 │   ├── package.json
 │   └── package-lock.json
+├── videos_redes/                 # Carpeta donde se guardan los reels listos para subir
+│   └── ejemplos de videos.mp4
 ```
 ---
 
@@ -53,9 +57,11 @@ EMAIL_PASS=tucontraseña
 EMAIL_SERVICE=gmail # o 'outlook'
 
 ### 4.Ejecutar el envio de correos
+```bash
 node scripts/node.js
 
 Este script:
+Actualiza base de datos con los datos del .csv
 
 Lee los suscriptores desde MySQL
 
@@ -64,6 +70,7 @@ Personaliza el newsletter con el nombre de cada usuario
 Convierte MJML a HTML
 
 Envía el correo por Gmail u Outlook según el proveedor de cada usuario
+```
 
 ### 5. Generar Reel para Redes Sociales
 node scripts/scriptreels.js
