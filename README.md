@@ -8,12 +8,12 @@ Este repositorio contiene dos proyectos independientes desarrollados para la **F
 - `supuesto1/`  
   📬 **Campaña para el Salón del Cómic de València**  
   Creación de un boletín informativo digital destacando **noticias, novedades y promociones especiales** del evento.  
-  → Incluye estructura MJML, ejemplos de diseño, y guía completa en su README.
+  → Incluye scripts de envío con Node.js y script para crear reels, diseño responsive en MJML, documentación en su README y carpeta /PDFs con sus explicaciones.
 
 - `supuesto4/`  
   🏍️ **Campaña para Feria Dos Ruedas – Sorteo GP Cheste**  
   Desarrollo de una campaña automatizada por email que **sortea entradas para el GP de motociclismo de Cheste** entre quienes completen un formulario antes del 1 de septiembre.  
-  → Incluye scripts de envío con Node.js, diseño responsive en MJML, automatización de reels y documentación en su README.
+  → Incluye scripts de envío con Node.js y script para crear reels, diseño responsive en MJML, documentación en su README y carpeta /PDFs con sus explicaciones.
 
 ---
 
@@ -28,6 +28,7 @@ Este repositorio contiene dos proyectos independientes desarrollados para la **F
 - `data/`: Datos de prueba (CSV de suscriptores).
 - `PDFs/`: Documentación en PDF (análisis, documentacion de diseño y del diagrama, planificación, etc.).
 - `mockups/`: Imágenes y capturas del diseño.
+
 ---
 ## Contacto
 👨‍💻 Autor: Samuel Ortiz Heredia  
