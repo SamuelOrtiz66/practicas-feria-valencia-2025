@@ -161,7 +161,7 @@ estado_envio
 ***Samuel Ortiz Heredia***
 - Proyecto desarrollado para Feria Valencia 2025
 
-*** Repositorio: ***
+***Repositorio:***
 - 🔗 github.com/SamuelOrtiz66/practicas-feria-valencia-2025
 
 - 📧 Contacto: samuelortizheredia@gmail.com
