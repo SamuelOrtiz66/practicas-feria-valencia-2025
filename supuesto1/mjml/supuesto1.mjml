@@ -256,13 +256,15 @@
         </mj-social-element>
         <mj-social-element
           name="twitter"
-          href="https://twitter.com/comicvalencia"
+          src="https://www.lowi.es/blog/wp-content/uploads/2023/10/twitter-X-1000x625.jpeg"
+          href="https://x.com/saloncomicvlc?lang=es"
           background-color="#1da1f2"
             >
-            Twitter
+            X
         </mj-social-element>
           <mj-social-element
             name="instagram"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
             href="https://www.instagram.com/saloncomicvalencia/"
             background-color="#e1306c"
           >
