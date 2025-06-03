@@ -278,6 +278,22 @@
           />
         </mj-column>
       </mj-section>
+      <mj-section background-color="#ffffff" padding="10px 20px 20px 20px" text-align="center">
+      <mj-column>
+        <mj-button
+          background-color="#ff6200"
+          color="#ffffff"
+          font-weight="700"
+          font-size="16px"
+          border-radius="24px"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeR9DU6AiRgkxzsivIUAR4z_OLdPPTs04yJOSUZhXgryvtXvA/viewform?usp=dialog"
+          padding="14px 30px"
+          target="_blank"
+      >
+      Valóranos
+    </mj-button>
+  </mj-column>
+</mj-section>
 
       <!-- FOOTER -->
       <mj-section background-color="#ffffff" padding="20px 20px 10px 20px">
