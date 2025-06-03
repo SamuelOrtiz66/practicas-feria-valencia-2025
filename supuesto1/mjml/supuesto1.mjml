@@ -240,37 +240,42 @@
           </mj-table>
         </mj-column>
       </mj-section>
+
       <!-- REDES SOCIALES -->
       <mj-section background-color="#ffffff" padding="10px 20px 20px 20px">
         <mj-column>
           <mj-text font-weight="700" font-size="16px" color="#ff6200" padding-bottom="12px" align="center">
             📱 Síguenos en nuestras redes sociales
-        </mj-text>
-        <mj-social font-size="14px" icon-size="32px" mode="horizontal" align="center">
-        <mj-social-element
-          name="facebook"
-          href="https://www.facebook.com/saloncomicvalencia"
-          background-color="#3b5998"
-        >
-          Facebook
-        </mj-social-element>
-        <mj-social-element
-          name="twitter"
-          src="https://www.lowi.es/blog/wp-content/uploads/2023/10/twitter-X-1000x625.jpeg"
-          href="https://x.com/saloncomicvlc?lang=es"
-          background-color="#1da1f2"
-            >
-            X
-        </mj-social-element>
-          <mj-social-element
-            name="instagram"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#ffffff" padding="0 20px 20px 20px">
+        <mj-column width="33.33%" padding="0">
+          <mj-image
+            href="https://www.facebook.com/saloncomicvalencia"
+            src="https://www.facebook.com/images/fb_icon_325x325.png"
+            alt="Facebook"
+            width="32px"
+            padding="0"
+          />
+        </mj-column>
+        <mj-column width="33.33%" padding="0">
+          <mj-image
+            href="https://x.com/saloncomicvlc?lang=es"
+            src="https://static.vecteezy.com/system/resources/previews/053/986/348/non_2x/x-twitter-icon-logo-symbol-free-png.png"
+            alt="Twitter"
+            width="32px"
+            padding="0"
+          />
+        </mj-column>
+        <mj-column width="33.33%" padding="0">
+          <mj-image
             href="https://www.instagram.com/saloncomicvalencia/"
-            background-color="#e1306c"
-          >
-            Instagram
-          </mj-social-element>
-          </mj-social>
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="Instagram"
+            width="32px"
+            padding="0"
+          />
         </mj-column>
       </mj-section>
 
