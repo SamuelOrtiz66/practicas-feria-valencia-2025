@@ -8,7 +8,6 @@
       <mj-text line-height="1.4" font-size="14px" />
       <mj-button border-radius="6px" font-weight="600" font-size="14px" padding="10px 20px" />
     </mj-attributes>
-
     <mj-style inline="inline">
       @media only screen and (max-width:480px) {
         .hero-title {
@@ -224,13 +223,11 @@
           </mj-text>
           <mj-table width="100%" padding="0">
             <tr>
-              <!-- Feria Valencia -->
               <td align="right" width="50%">
                 <a href="https://www.feriavalencia.com" target="_blank">
                   <img src="https://espaciococina.feriavalencia.com/wp-content/uploads/2021/10/FV_Logo_1.png" width="180" class="logo-organizan" style="padding-right: 20px;" alt="Feria Valencia" />
                 </a>
               </td>
-              <!-- Ayuntamiento -->
               <td align="left" width="50%">
                 <a href="https://www.saloncomicvalencia.com/" target="_blank">
                   <img src="https://www.saloncomicvalencia.com/wp-content/uploads/2021/06/LogoSCV_mas-fechas_Azul.png" width="120" class="logo-organizan" style="padding-left: 20px;" alt="Ayuntamiento de Valencia" />
@@ -241,7 +238,7 @@
         </mj-column>
       </mj-section>
 
-      <!-- REDES SOCIALES -->
+      <!-- REDES SOCIALES (CORREGIDO) -->
       <mj-section background-color="#ffffff" padding="10px 20px 20px 20px">
         <mj-column>
           <mj-text font-weight="700" font-size="16px" color="#ff6200" padding-bottom="12px" align="center">
@@ -250,50 +247,48 @@
         </mj-column>
       </mj-section>
       <mj-section background-color="#ffffff" padding="0 20px 20px 20px">
-        <mj-column width="33.33%" padding="0">
-          <mj-image
-            href="https://www.facebook.com/saloncomicvalencia"
-            src="https://www.facebook.com/images/fb_icon_325x325.png"
-            alt="Facebook"
-            width="32px"
-            padding="0"
-          />
-        </mj-column>
-        <mj-column width="33.33%" padding="0">
-          <mj-image
-            href="https://x.com/saloncomicvlc?lang=es"
-            src="https://static.vecteezy.com/system/resources/previews/053/986/348/non_2x/x-twitter-icon-logo-symbol-free-png.png"
-            alt="Twitter"
-            width="32px"
-            padding="0"
-          />
-        </mj-column>
-        <mj-column width="33.33%" padding="0">
-          <mj-image
-            href="https://www.instagram.com/saloncomicvalencia/"
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            alt="Instagram"
-            width="32px"
-            padding="0"
-          />
+        <mj-column>
+          <mj-raw>
+            <table align="center" cellpadding="10" cellspacing="0" style="margin: 0 auto; text-align: center;">
+              <tr>
+                <td align="center">
+                  <a href="https://www.facebook.com/saloncomicvalencia" target="_blank">
+                    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook" width="32" style="display:inline-block;" />
+                  </a>
+                </td>
+                <td align="center">
+                  <a href="https://x.com/saloncomicvlc?lang=es" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/053/986/348/non_2x/x-twitter-icon-logo-symbol-free-png.png" alt="Twitter" width="32" style="display:inline-block;" />
+                  </a>
+                </td>
+                <td align="center">
+                  <a href="https://www.instagram.com/saloncomicvalencia/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="32" style="display:inline-block;" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </mj-raw>
         </mj-column>
       </mj-section>
+
+      <!-- VALÓRANOS -->
       <mj-section background-color="#ffffff" padding="10px 20px 20px 20px" text-align="center">
-      <mj-column>
-        <mj-button
-          background-color="#ff6200"
-          color="#ffffff"
-          font-weight="700"
-          font-size="16px"
-          border-radius="24px"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeR9DU6AiRgkxzsivIUAR4z_OLdPPTs04yJOSUZhXgryvtXvA/viewform?usp=dialog"
-          padding="14px 30px"
-          target="_blank"
-      >
-      Valóranos
-    </mj-button>
-  </mj-column>
-</mj-section>
+        <mj-column>
+          <mj-button
+            background-color="#ff6200"
+            color="#ffffff"
+            font-weight="700"
+            font-size="16px"
+            border-radius="24px"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeR9DU6AiRgkxzsivIUAR4z_OLdPPTs04yJOSUZhXgryvtXvA/viewform?usp=dialog"
+            padding="14px 30px"
+            target="_blank"
+          >
+            Valóranos
+          </mj-button>
+        </mj-column>
+      </mj-section>
 
       <!-- FOOTER -->
       <mj-section background-color="#ffffff" padding="20px 20px 10px 20px">
