@@ -48,6 +48,9 @@ const { exec } = require('child_process');
     exec(`ffmpeg -y -i "${webmPath}" -c:v libx264 -preset fast -pix_fmt yuv420p "${mp4Path}"`, (error) => {
       if (error) throw error;
       console.log('✅ Reel generado en:', mp4Path);
+
+      fs.unlinkSync(htmlPath);
+      fs.unlinkSync(webmPath);      
     });
 
   } catch (err) {

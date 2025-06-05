@@ -4,6 +4,8 @@
     "dotenv": "^16.5.0",
     "mjml": "^4.15.3",
     "mysql2": "^3.14.1",
-    "nodemailer": "^7.0.3"
+    "nodemailer": "^7.0.3",
+    "puppeteer": "^19.0.0",
+    "puppeteer-screen-recorder": "^3.0.6"
   }
 }

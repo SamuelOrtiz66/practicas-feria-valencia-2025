@@ -1,0 +1,196 @@
+<mjml>
+  <mj-head>
+    <mj-title>Boletín Oficial | Salón del Cómic de València</mj-title>
+    <mj-preview>Noticias, artistas confirmados y promociones especiales del Salón del Cómic 2025</mj-preview>
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
+    <mj-attributes>
+      <mj-all font-family="Poppins, Arial, sans-serif" color="#333333" />
+      <mj-text line-height="1.4" font-size="14px" />
+      <mj-button border-radius="6px" font-weight="600" font-size="14px" padding="10px 20px" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      @media only screen and (max-width:480px) {
+        .hero-title { font-size: 20px !important; line-height: 1.3 !important; }
+        .hero-text { font-size: 13px !important; }
+        .button-adjust { padding: 10px 20px !important; font-size: 14px !important; }
+        .artist-img { width: 70px !important; }
+        .artist-name { font-size: 13px !important; }
+        .logo-organizan { width: 100px !important; padding-left: 10px !important; padding-right: 10px !important; }
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      @media only screen and (max-width:768px) {
+        .hero-title { font-size: 22px !important; }
+        .hero-text { font-size: 14px !important; }
+        .button-adjust { font-size: 15px !important; padding: 10px 24px !important; }
+        .artist-img { width: 80px !important; }
+        .logo-organizan { width: 120px !important; padding-left: 12px !important; padding-right: 12px !important; }
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      @media only screen and (min-width:1025px) {
+        .desktop-extra { display: block !important; max-height: none !important; overflow: visible !important; }
+        .hero-title { font-size: 28px !important; }
+        .hero-text { font-size: 16px !important; }
+        .button-adjust { font-size: 17px !important; }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#ffffff">
+    <mj-wrapper full-width background-color="#ffffff">
+
+      <!-- NUEVO ENCABEZADO -->
+      <mj-section background-color="#ffffff" padding="20px 20px 10px 20px">
+        <mj-column>
+          <mj-text color="#ff6200" font-size="16px" font-weight="700" line-height="1.2">
+            🎬 ¡Ya puedes ver el REEL oficial del Salón del Cómic de València 2025!  
+          </mj-text>
+          <mj-text font-size="14px" color="#555555" padding-top="6px">
+            Sumérgete en el universo del cómic, los artistas, las sorpresas... ¡y lo que está por venir!  
+            Desliza hacia abajo para descubrir todo lo que te espera.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section
+        full-width="full-width"
+        background-url="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWVjenl1bmNwMmQyaTR5YWxvNmY4NDgzMmJ1bnN6dXdpaGcwaTYyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XAwZ54RCXropXS8ZOJ/giphy.gif"
+        background-repeat="no-repeat"
+        background-size="cover"
+        background-position="center"
+        background-color="#ffffff"
+        padding="15px 0"
+      >
+        <mj-column vertical-align="middle">
+          <mj-image
+            src="https://www.saloncomicvalencia.com/wp-content/uploads/2023/11/LogoSCV-negro-300x274.png"
+            alt="Logo Salón del Cómic de València"
+            width="140px"
+            padding="0"
+          />
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#ff6200" padding="30px 20px" border-radius="24px">
+        <mj-column>
+          <mj-text css-class="hero-title" font-size="24px" font-weight="700" color="#ffffff" line-height="1.2" padding-bottom="8px">
+            ¡Bienvenido al Boletín Oficial del Salón del Cómic de València!
+          </mj-text>
+          <mj-text css-class="hero-text" font-size="14px" font-weight="500" color="#fff3e0" padding-bottom="16px">
+            Entérate de las últimas noticias, invitados especiales y promociones exclusivas para amantes del cómic.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#f9f9f9" padding="30px 20px" border-radius="24px">
+        <mj-column>
+          <mj-image
+            src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/03/SALON-DEL-COMIC-DE-VALENCIA-2024-14.jpg"
+            alt="Salón del Cómic de València"
+            border-radius="16px"
+            padding="0"
+            height="260px"
+            width="410px"
+            fluid-on-mobile="true"
+          />
+          <mj-text color="#ff6200" font-weight="700" font-size="20px" padding-top="16px" padding-bottom="6px">
+            🎨 Cartel Oficial 2025 Revelado
+          </mj-text>
+          <mj-text color="#555555" font-size="14px" line-height="1.4" padding-bottom="16px">
+            El nuevo cartel animado del Salón del Cómic de València 2025, ilustrado por David López, ya está disponible. Descubre la obra que representa la esencia del evento de este año.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#ff6200" padding="25px 20px" border-radius="24px">
+        <mj-column>
+          <mj-text font-size="18px" font-weight="700" color="#ffffff" padding-bottom="6px">
+            🎟️ Oferta especial: 10% de descuento en entradas
+          </mj-text>
+          <mj-text color="#fff9f3" font-size="14px" line-height="1.4">
+            Aprovecha nuestro descuento exclusivo para los lectores del boletín. Compra tus entradas antes del 15 de junio y disfruta de esta promoción única.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#f9f9f9" padding="30px 20px" border-radius="24px">
+        <mj-column>
+          <mj-text font-size="20px" font-weight="700" color="#ff6200" padding-bottom="8px" align="center">
+            🌟 Artistas confirmados
+          </mj-text>
+
+          <mj-raw>
+            <table cellpadding="8" cellspacing="0" width="100%" style="color: #555555; font-size: 14px; margin: 0 auto;">
+              <tr style="border-bottom: 1px solid #ddd;">
+                <td align="center" width="30%">
+                  <img src="https://www.astiberri.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb090IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--11d7494dd0efd37d38eb70447adab44f9d85f740/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmtDckFOcEFyd0MiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--d3102f71a9844341fa4a463f4a5a85d2ed0462c1/KenNiimura.jpg" width="90" style="border-radius: 12px;" />
+                </td>
+                <td style="padding-left: 12px;" valign="middle" class="artist-name">
+                  <strong>Ken Niimura</strong><br/>
+                  Ilustrador y autor reconocido internacionalmente.
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid #ddd;">
+                <td align="center">
+                  <img src="https://anaoncina.com/media/4004e6aa-84dd-4108-b927-d8c5acee4b90.jpg" alt="Ana Oncina" class="artist-img" width="90" style="border-radius: 12px;" />
+                </td>
+                <td style="padding-left: 12px;" valign="middle" class="artist-name">
+                  <strong>Ana Oncina</strong><br/>
+                  Creadora de «Croqueta y empanadilla».
+                </td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/10.18.09MikeMcKoneByLuigiNovi.jpg" alt="Mike McKone" class="artist-img" width="90" style="border-radius: 12px;" />
+                </td>
+                <td style="padding-left: 12px;" valign="middle" class="artist-name">
+                  <strong>Mike McKone</strong><br/>
+                  Dibujante de Marvel Comics.
+                </td>
+              </tr>
+            </table>
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#ffffff" padding="15px 20px">
+        <mj-column>
+          <mj-text font-weight="700" font-size="16px" color="#ff6200" padding-bottom="8px" align="center">
+            🏛️ Organizan
+          </mj-text>
+          <mj-table width="100%" padding="0">
+            <tr>
+              <td align="right" width="50%">
+                <a href="https://www.feriavalencia.com" target="_blank">
+                  <img src="https://espaciococina.feriavalencia.com/wp-content/uploads/2021/10/FV_Logo_1.png" width="180" class="logo-organizan" style="padding-right: 20px;" alt="Feria Valencia" />
+                </a>
+              </td>
+              <td align="left" width="50%">
+                <a href="https://www.saloncomicvalencia.com/" target="_blank">
+                  <img src="https://www.saloncomicvalencia.com/wp-content/uploads/2021/06/LogoSCV_mas-fechas_Azul.png" width="120" class="logo-organizan" style="padding-left: 20px;" alt="Salón del Cómic de València" />
+                </a>
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+
+      <!-- FINAL MEJORADO CON FLECHA -->
+      <mj-section background-color="#ffffff" padding="20px 20px 40px 20px">
+        <mj-column>
+          <mj-text align="center" font-size="16px" font-weight="700" color="#ff6200" padding-bottom="10px">
+            👇 Desliza para más información 👇
+          </mj-text>
+          <mj-image
+            src="https://cdn.pixabay.com/animation/2022/10/26/02/47/02-47-00-744_512.gif"
+            alt="Desliza hacia abajo"
+            width="60px"
+            align="center"
+          />
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>

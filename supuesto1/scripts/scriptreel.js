@@ -16,7 +16,7 @@ const { exec } = require('child_process');
     }
 
     //Leer y convertir MJML a HTML
-    const mjmlPath = path.resolve(__dirname, '../mjml/supuesto4_reel.mjml');
+    const mjmlPath = path.resolve(__dirname, '../mjml/supuesto1_reel.mjml');
     const mjmlContent = fs.readFileSync(mjmlPath, 'utf8');
 
     const { html } = mjml(mjmlContent, { minify: true });
@@ -48,6 +48,9 @@ const { exec } = require('child_process');
     exec(`ffmpeg -y -i "${webmPath}" -c:v libx264 -preset fast -pix_fmt yuv420p "${mp4Path}"`, (error) => {
       if (error) throw error;
       console.log('✅ Reel generado en:', mp4Path);
+
+      fs.unlinkSync(htmlPath);
+      fs.unlinkSync(webmPath);
     });
 
   } catch (err) {
