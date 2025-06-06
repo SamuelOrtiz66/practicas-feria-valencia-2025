@@ -59,10 +59,9 @@
           <mj-text css-class="hero-text" font-size="14px" font-weight="500" color="#fff3e0" padding-bottom="16px">
             Entérate de las últimas noticias, invitados especiales y promociones exclusivas para amantes del cómic.
           </mj-text>
-<mj-button css-class="button-adjust" href="https://www.saloncomicvalencia.com" border="2px solid #ffffff">
-  Visitar web oficial
-</mj-button>
-
+          <mj-button css-class="button-adjust" href="https://www.saloncomicvalencia.com" border="2px solid #ffffff">
+            Visitar web oficial
+          </mj-button>
         </mj-column>
       </mj-section>
 
@@ -160,14 +159,16 @@
       </mj-section>
 
       <!-- FOOTER -->
-<mj-section background-color="#333333" padding="20px">
-  <mj-column>
-    <mj-text color="#ccc" font-size="13px" align="center" line-height="1.5">
-      Si deseas darte de baja, haz clic <span style="color:#b71c1c; font-weight:bold;">aquí</span>.<br/>
-      © 2025 Salón del Cómic de València. Todos los derechos reservados.
-    </mj-text>
-  </mj-column>
-</mj-section>
+      <mj-section background-color="#333333" padding="20px">
+        <mj-column>
+          <mj-text color="#ccc" font-size="13px" align="center" line-height="1.5">
+            Este correo electrónico se envía a <span style="color:#ffffff;">{{email}}</span>.<br/><br/>
+            Si deseas darte de baja, haz clic <span style="color:#b71c1c; font-weight:bold;">aquí</span>.<br/>
+            © 2025 Salón del Cómic de València. Todos los derechos reservados.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
 
     </mj-wrapper>
   </mj-body>
