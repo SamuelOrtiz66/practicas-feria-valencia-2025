@@ -99,17 +99,17 @@ async function main() {
         await transporter.sendMail({
           from: `"Salon del Comic Valencia" <${transporterConfig.auth.user}>`,
           to: suscriptor.email,
-          subject: '¡Te invitamos a el Salon del Comic en Feria Valencia¡No te lo pierdas!',
+          subject: '¡Te invitamos a el Salon del Comic en Feria Valencia ¡No te lo pierdas!',
           html,
         });
 
         console.log(`✅ Correo enviado a: ${suscriptor.email}`);
 
-        // Insertar en historial_envios con boletin_id = 1
+        //Insertar en historial_envios con boletin_id = 1
         await connection.execute(
           `INSERT INTO historial_envios (suscriptor_id, boletin_id, asunto, estado_envio, fecha_envio, error_mensaje)
            VALUES (?, ?, ?, 'enviado', NOW(), NULL)`,
-          [suscriptor.id, 1, '¡Participa en el sorteo del GP de Motociclismo | Feria Valencia!']
+          [suscriptor.id, 1, '¡Te invitamos a el Salon del Comic en Feria Valencia¡No te lo pierdas!']
         );
       } catch (error) {
         console.error(`❌ Error enviando a ${suscriptor.email}:`, error.message);
@@ -117,7 +117,7 @@ async function main() {
         await connection.execute(
           `INSERT INTO historial_envios (suscriptor_id, boletin_id, asunto, estado_envio, fecha_envio, error_mensaje)
            VALUES (?, ?, ?, 'error', NOW(), ?)`,
-          [suscriptor.id, 1, '¡Participa en el sorteo del GP de Motociclismo | Feria Valencia!', error.message]
+          [suscriptor.id, 1, '¡Te invitamos a el Salon del Comic en Feria Valencia¡No te lo pierdas!', error.message]
         );
       }
     }
