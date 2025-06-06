@@ -91,30 +91,36 @@
         </mj-column>
       </mj-section>
 
-      <!-- ARTISTAS confirmados -->
+        <!-- ARTISTAS confirmados -->
+        <mj-section background-color="#f9f9f9" padding="30px 20px" border-radius="24px">
+          <mj-column>
+            <mj-raw>
+              <div style="border: 2px solid #b71c1c; border-radius: 20px; padding: 16px; font-family: Poppins, Arial, sans-serif; color: #333333;">
+              <div style="text-align: center; font-size: 20px; font-weight: 700; color: #b71c1c; padding-bottom: 16px;">
+                🌟 Artistas confirmados
+              </div>
+              <div style="font-size: 14px; line-height: 1.6;">
+                - <strong>Ken Niimura</strong>: historietista hispano‑japonés, autor del aclamado <em>Umami</em>, ganador del Eisner, y colaborador en <em>I Kill Giants</em>.
+              </div>
+              <div style="border-top: 1px solid #ddd; margin: 16px 0;"></div>
+              <div style="font-size: 14px; line-height: 1.6;">
+                - <strong>Ana Oncina</strong>: creadora de <em>Croqueta y Empanadilla</em>, obra galardonada con el Premio del Público en el Salón del Cómic de Barcelona 2015 y reconocida por la lista Forbes “30 menores de 30” en Europa.
+              </div>
+              <div style="border-top: 1px solid #ddd; margin: 16px 0;"></div>
+              <div style="font-size: 14px; line-height: 1.6;">
+                - <strong>Mike McKone</strong>: dibujante británico especializado en cómic heroico, con trabajos destacados en <em>Fantastic Four</em>, <em>Exiles</em>, <em>Teen Titans</em> y <em>Hulk</em>.
+              </div>
 
-      <mj-section background-color="#f9f9f9" padding="30px 20px" border-radius="24px">
-        <mj-column>
-          <mj-raw>
-            <div style="border: 2px solid #b71c1c; border-radius: 20px; padding: 16px; font-family: Poppins, Arial, sans-serif; color: #333333;">
-            <div style="text-align: center; font-size: 20px; font-weight: 700; color: #b71c1c; padding-bottom: 16px;">
-            🌟 Artistas confirmados
-            </div>
-            <div style="font-size: 14px; line-height: 1.6;">
-              - <strong>Ken Niimura</strong>: historietista hispano‑japonés, autor del aclamado <em>Umami</em>, ganador del Eisner, y colaborador en <em>I Kill Giants</em>.
-            </div>
-            <div style="border-top: 1px solid #ddd; margin: 16px 0;"></div>
-            <div style="font-size: 14px; line-height: 1.6;">
-              - <strong>Ana Oncina</strong>: creadora de <em>Croqueta y Empanadilla</em>, obra galardonada con el Premio del Público en el Salón del Cómic de Barcelona 2015 y reconocida por la lista Forbes “30 menores de 30” en Europa.
-            </div>
-            <div style="border-top: 1px solid #ddd; margin: 16px 0;"></div>
-            <div style="font-size: 14px; line-height: 1.6;">
-              - <strong>Mike McKone</strong>: dibujante británico especializado en cómic heroico, con trabajos destacados en <em>Fantastic Four</em>, <em>Exiles</em>, <em>Teen Titans</em> y <em>Hulk</em>.
-            </div>
+              <div style="text-align: center; margin-top: 24px;">
+                <a href="https://www.saloncomicvalencia.com/invitados-salon-del-comic-de-valencia-2025/" target="_blank" style="display: inline-block; background-color: #b71c1c; color: #ffffff; font-weight: bold; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-size: 14px;">
+                Ver todos los invitados
+                </a>
+              </div>
             </div>
           </mj-raw>
         </mj-column>
       </mj-section>
+
 
       <!-- SECCIÓN REDES SOCIALES -->
       <mj-section background-color="#ffffff" padding="10px 20px 10px">
