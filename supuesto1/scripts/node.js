@@ -97,9 +97,9 @@ async function main() {
         }
 
         await transporter.sendMail({
-          from: `"Feria Valencia" <${transporterConfig.auth.user}>`,
+          from: `"Salon del Comic Valencia" <${transporterConfig.auth.user}>`,
           to: suscriptor.email,
-          subject: '¡Participa en el sorteo del GP de Motociclismo | Feria Valencia!',
+          subject: '¡Te invitamos a el Salon del Comic en Feria Valencia¡No te lo pierdas!',
           html,
         });
 
